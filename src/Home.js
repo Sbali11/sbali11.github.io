@@ -59,9 +59,9 @@ export default function Home() {
                         <h1 className="animated fadeInDown">
                             <span style={{ color: '#6512b2' }}>S</span>hreya<br />Bali
                         </h1>{/* Title */}
-                        <button type="button" className="btn btn-social-icon btn-github" onclick="location.href='https://github.com/Sbali11'"><i className="fa fa-github" /></button>
-                        <button type="button" className="btn btn-social-icon btn-twitter" onclick="location.href='https://twitter.com/ShreyaBali3'"><i className="fa fa-twitter" /></button>
-                        <button type="button" className="btn btn-social-icon btn-linkedin" onclick="location.href='https://linkedin.com/in/shreya-bali-089478107'"><i className="fa fa-linkedin" /></button>
+                        <Button type="Button" className="btn btn-social-icon btn-github m-1" href='https://github.com/Sbali11'><i className="fa fa-github" /></Button>
+                        <Button type="Button" className="btn btn-social-icon btn-twitter m-1" href='https://twitter.com/ShreyaBali3'><i className="fa fa-twitter" /></Button>
+                        <Button type="Button" className="btn btn-social-icon btn-linkedin m-1" href='https://linkedin.com/in/shreya-bali-089478107'><i className="fa fa-linkedin" /></Button>
                         </div>
 
                         <div id="stay-at-bottom">
@@ -100,7 +100,7 @@ export default function Home() {
         </section>
         <section className="intro text-center section-padding color-purple" id="about">
             <div>
-                <a href="./files/Resume_Shreya_Bali.pdf" download> My Resume </a>
+                <a href="/src/files/Resume_Shreya_Bali.pdf" download> My Resume </a>
             </div>
         </section>
         {/* ==========================
@@ -116,7 +116,7 @@ export default function Home() {
                     </div>
                 </div>
                 <p> <b>Select things you are interested in too! </b></p>
-                <div className="row justify-content-center" data-toggle="buttons">
+                <div className="row justify-content-center" data-toggle="Buttons">
                     <div className="col-md-12 justify-content-center">
                         <div className="services">
                             {/* Service Box 1 */}
@@ -145,14 +145,14 @@ export default function Home() {
                             </div>
                             {/* Service Box 4 */}
 
-                            <div className="col-md-4  item delay-1s">
+                            <div className="col-md-6  item delay-1s">
                                 <div className="icon" id="social" onClick={() => toggleElem(3, "social")}>
                                     <i className="fa fa-medkit" />{/* Icon */}
                                 </div>
                                 <h2>Socially Relevant Work</h2>{/* Title */}
                                 <p />{/* Description */}
                             </div>
-                            <div className="col-md-4  item delay-1s">
+                            <div className="col-md-6   item delay-1s">
                                 <div className="icon" id="Opinionat-ing" onClick={() => toggleElem(4, "Opinionat-ing")}>
                                     <i className="fa fa-pencil" />{/* Icon */}
                                 </div>
