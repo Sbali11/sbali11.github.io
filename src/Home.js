@@ -100,7 +100,7 @@ export default function Home() {
         </section>
         <section className="intro text-center section-padding color-purple" id="about">
             <div>
-                <a href="files/Resume_Shreya_Bali.pdf" download> My Resume </a>
+                <a href="./files/Resume_Shreya_Bali.pdf" download> My Resume </a>
             </div>
         </section>
         {/* ==========================
