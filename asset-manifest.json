@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/ShreyaBali/static/css/main.8f5b882f.chunk.css",
-    "main.js": "/ShreyaBali/static/js/main.47df864b.chunk.js",
-    "main.js.map": "/ShreyaBali/static/js/main.47df864b.chunk.js.map",
-    "runtime-main.js": "/ShreyaBali/static/js/runtime-main.831045e6.js",
-    "runtime-main.js.map": "/ShreyaBali/static/js/runtime-main.831045e6.js.map",
-    "static/js/2.e607c9d5.chunk.js": "/ShreyaBali/static/js/2.e607c9d5.chunk.js",
-    "static/js/2.e607c9d5.chunk.js.map": "/ShreyaBali/static/js/2.e607c9d5.chunk.js.map",
-    "static/js/3.f438a2ef.chunk.js": "/ShreyaBali/static/js/3.f438a2ef.chunk.js",
-    "static/js/3.f438a2ef.chunk.js.map": "/ShreyaBali/static/js/3.f438a2ef.chunk.js.map",
+    "main.css": "/ShreyaBali/static/css/main.e2562462.chunk.css",
+    "main.js": "/ShreyaBali/static/js/main.b4cd47e7.chunk.js",
+    "main.js.map": "/ShreyaBali/static/js/main.b4cd47e7.chunk.js.map",
+    "runtime-main.js": "/ShreyaBali/static/js/runtime-main.2d20c64b.js",
+    "runtime-main.js.map": "/ShreyaBali/static/js/runtime-main.2d20c64b.js.map",
+    "static/js/2.8d07be0e.chunk.js": "/ShreyaBali/static/js/2.8d07be0e.chunk.js",
+    "static/js/2.8d07be0e.chunk.js.map": "/ShreyaBali/static/js/2.8d07be0e.chunk.js.map",
+    "static/js/3.e66b0c17.chunk.js": "/ShreyaBali/static/js/3.e66b0c17.chunk.js",
+    "static/js/3.e66b0c17.chunk.js.map": "/ShreyaBali/static/js/3.e66b0c17.chunk.js.map",
     "index.html": "/ShreyaBali/index.html",
-    "static/css/main.8f5b882f.chunk.css.map": "/ShreyaBali/static/css/main.8f5b882f.chunk.css.map",
-    "static/js/2.e607c9d5.chunk.js.LICENSE.txt": "/ShreyaBali/static/js/2.e607c9d5.chunk.js.LICENSE.txt",
+    "static/css/main.e2562462.chunk.css.map": "/ShreyaBali/static/css/main.e2562462.chunk.css.map",
+    "static/js/2.8d07be0e.chunk.js.LICENSE.txt": "/ShreyaBali/static/js/2.8d07be0e.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/ShreyaBali/static/media/fontawesome-webfont.fb685a7c.woff2",
     "static/media/bootstrap.min.css": "/ShreyaBali/static/media/glyphicons-halflings-regular.e3cab037.woff",
     "static/media/style.css": "/ShreyaBali/static/media/header-bg.05646a47.jpg",
     "static/media/logo.6ce24c58.svg": "/ShreyaBali/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.831045e6.js",
-    "static/js/2.e607c9d5.chunk.js",
-    "static/css/main.8f5b882f.chunk.css",
-    "static/js/main.47df864b.chunk.js"
+    "static/js/runtime-main.2d20c64b.js",
+    "static/js/2.8d07be0e.chunk.js",
+    "static/css/main.e2562462.chunk.css",
+    "static/js/main.b4cd47e7.chunk.js"
   ]
 }
