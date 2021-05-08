@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/ShreyaBali/static/css/main.58af847e.chunk.css",
-    "main.js": "/ShreyaBali/static/js/main.ff0f4490.chunk.js",
-    "main.js.map": "/ShreyaBali/static/js/main.ff0f4490.chunk.js.map",
-    "runtime-main.js": "/ShreyaBali/static/js/runtime-main.07083675.js",
-    "runtime-main.js.map": "/ShreyaBali/static/js/runtime-main.07083675.js.map",
-    "static/js/2.9b9bdd50.chunk.js": "/ShreyaBali/static/js/2.9b9bdd50.chunk.js",
-    "static/js/2.9b9bdd50.chunk.js.map": "/ShreyaBali/static/js/2.9b9bdd50.chunk.js.map",
-    "static/js/3.7e699732.chunk.js": "/ShreyaBali/static/js/3.7e699732.chunk.js",
-    "static/js/3.7e699732.chunk.js.map": "/ShreyaBali/static/js/3.7e699732.chunk.js.map",
+    "main.js": "/ShreyaBali/static/js/main.a5e29756.chunk.js",
+    "main.js.map": "/ShreyaBali/static/js/main.a5e29756.chunk.js.map",
+    "runtime-main.js": "/ShreyaBali/static/js/runtime-main.831045e6.js",
+    "runtime-main.js.map": "/ShreyaBali/static/js/runtime-main.831045e6.js.map",
+    "static/js/2.5cc0c3c9.chunk.js": "/ShreyaBali/static/js/2.5cc0c3c9.chunk.js",
+    "static/js/2.5cc0c3c9.chunk.js.map": "/ShreyaBali/static/js/2.5cc0c3c9.chunk.js.map",
+    "static/js/3.f438a2ef.chunk.js": "/ShreyaBali/static/js/3.f438a2ef.chunk.js",
+    "static/js/3.f438a2ef.chunk.js.map": "/ShreyaBali/static/js/3.f438a2ef.chunk.js.map",
     "index.html": "/ShreyaBali/index.html",
     "static/css/main.58af847e.chunk.css.map": "/ShreyaBali/static/css/main.58af847e.chunk.css.map",
-    "static/js/2.9b9bdd50.chunk.js.LICENSE.txt": "/ShreyaBali/static/js/2.9b9bdd50.chunk.js.LICENSE.txt",
+    "static/js/2.5cc0c3c9.chunk.js.LICENSE.txt": "/ShreyaBali/static/js/2.5cc0c3c9.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/ShreyaBali/static/media/fontawesome-webfont.fb685a7c.woff2",
     "static/media/bootstrap.min.css": "/ShreyaBali/static/media/glyphicons-halflings-regular.e3cab037.woff",
     "static/media/style.css": "/ShreyaBali/static/media/header-bg.05646a47.jpg",
     "static/media/logo.6ce24c58.svg": "/ShreyaBali/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.07083675.js",
-    "static/js/2.9b9bdd50.chunk.js",
+    "static/js/runtime-main.831045e6.js",
+    "static/js/2.5cc0c3c9.chunk.js",
     "static/css/main.58af847e.chunk.css",
-    "static/js/main.ff0f4490.chunk.js"
+    "static/js/main.a5e29756.chunk.js"
   ]
 }
