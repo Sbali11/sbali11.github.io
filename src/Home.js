@@ -2,6 +2,8 @@ import { positions, projects, extracurricular } from "./projects/list.js";
 import { useState } from "react";
 import { Badge, Button, Card } from "react-bootstrap";
 import Experiences from "./Component.js"
+import { Parallax } from 'react-parallax';
+
 export default function Home() {
 
     const icons = {
@@ -57,7 +59,8 @@ export default function Home() {
             {/*/container*/}
             {/* Header Image */}
             <section >
-                <div className="parallax" height={100}>
+
+                <div className="parallax">
                     {/* Slider Button (don't edit!)*/}
 
                     {/* HEADER HEADLINE */}
@@ -68,9 +71,9 @@ export default function Home() {
                             <h1 className="animated fadeInDown">
                                 <span style={{ color: '#6512b2' }}>S</span>hreya<br />Bali
                             </h1>
-                            <Button type="Button" className="btn btn-social-icon btn-github m-1" href='https://github.com/Sbali11'><i className="fa fa-github" /></Button>
-                            <Button type="Button" className="btn btn-social-icon btn-twitter m-1" href='https://twitter.com/ShreyaBali3'><i className="fa fa-twitter" /></Button>
-                            <Button type="Button" className="btn btn-social-icon btn-linkedin m-1" href='https://linkedin.com/in/shreya-bali-089478107'><i className="fa fa-linkedin" /></Button>
+                            <Button style={{ background: '#6512b2' }} className="btn btn-social-icon btn-github m-1" href='https://github.com/Sbali11'><i className="fa fa-github" /></Button>
+                            <Button style={{ background: '#6512b2' }} className="btn btn-social-icon btn-twitter m-1" href='https://twitter.com/ShreyaBali3'><i className="fa fa-twitter" /></Button>
+                            <Button style={{ background: '#6512b2' }} className="btn btn-social-icon btn-linkedin m-1" href='https://linkedin.com/in/shreya-bali-089478107'><i className="fa fa-linkedin" /></Button>
                         </div>
                     </div>
 
