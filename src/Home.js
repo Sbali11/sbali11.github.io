@@ -1,32 +1,34 @@
-import { positions, projects, extracurricular } from "./projects/list.js";
+import { positions, projects, extracurricular, current_work } from "./projects/list.js";
 import { useState } from "react";
 import { Badge, Button, Card } from "react-bootstrap";
 import Experiences from "./Component.js"
 import { Parallax } from 'react-parallax';
-
 export default function Home() {
 
     const icons = {
-        "coding": 0,
-        "ideation": 1,
-        "research": 1,
-        "education/mentoring": 2,
-        "social": 3,
-        "Opinionat-ing": 4
-    }
-    const [isClicked, setIsClicked] = useState([false, false, false, false, false]);
-    const [count, setCount] = useState([0, 0, 0, 0, 0]);
+        "Machine Learning": 0,
+        "Human Computer Interaction": 1,
+        "Parallel/Distributed Systems": 2,
+        "Research": 3,
+        "Education/mentoring": 4,
+        "Socially Relevant Work": 5,
+        "Opinionat-ing/Talks": 6,
+        
 
+    }
+    const [isClicked, setIsClicked] = useState([false, false, false, false, false, false, false]);
+    const [allTags, setAllTags] = useState(["Machine Learning", "Human Computer Interaction",  "Parallel/Distributed Systems", "Research", "Education/mentoring", "Socially Relevant Work", "Opinionat-ing/Talks"]);
+
+    const [count, setCount] = useState([0, 0, 0, 0, 0]);
     const [interested, setInterested] = useState(new Set());
     function toggleElem(item_key, name) {
 
         var x = document.getElementById(name);
-
-        if (x.style.color === 'rgb(87, 83, 149)') {
-            x.style.color = '#f8d776';
+        if (x.style.background === 'rgb(211, 211, 211)') {
+            x.style.background = '#f8d776';
 
         } else {
-            x.style.color = '#575395';
+            x.style.background = 'rgb(211, 211, 211)';
 
         }
         const newList = isClicked.map((data, key) => {
@@ -38,6 +40,8 @@ export default function Home() {
             if (key == item_key && !isClicked[key]) return count[key] + 1;
             else return count[key]
         })
+
+
         setIsClicked(newList);
         setCount(newCount)
 
@@ -99,10 +103,14 @@ export default function Home() {
                         {/* about / welcome text */}
                         <p>
                             <b>
-                                I'm currently a student at Carnegie Mellon School of Computer Science with a keen interest in Machine
-                                Learning, HCI, Natural Language Processing, and education. I enjoy thinking about different ways in which
+                                I'm currently a Fifth Year Master's Student at Carnegie Mellon School of Computer Science with a keen interest in Machine
+                                Learning and Human Computer Interaction. I enjoy thinking about different ways in which
                                 computer science can be used to make life better.
-            </b></p>
+
+                                <br />
+                                <br />
+                                I believe everything is a little better with music playing in the background, so here's a periodically updated list of songs I'm currently listening for you to play while scrolling through my website!
+                            </b></p>
                         <p />
                         <div class="mt-auto p-2 bd-highlight">
                             <iframe src="https://open.spotify.com/embed/playlist/66phfa44ZZyEQw5JDvyDGe" width={300} height={200} frameBorder={0} allowTransparency="true" allow="encrypted-media" />
@@ -111,11 +119,7 @@ export default function Home() {
                 </div>
             </div>
         </section>
-        <section className="intro text-center section-padding color-purple" id="about">
-            <div>
-                <a href="https://drive.google.com/file/d/1yPI_9m8-c4YRtmTSp98fT2fBYDNt6vj8/view?usp=sharing" download> My Resume </a>
-            </div>
-        </section>
+
         {/* ==========================
   SERVICE SECTION 
   =========================== */}
@@ -128,86 +132,34 @@ export default function Home() {
                         <h1 className="arrow">I spend my time on these things</h1>
                     </div>
                 </div>
-                <p> <b>Select things you are interested in too! </b></p>
-                <div className="row justify-content-center" data-toggle="Buttons">
-                    <div className="col-md-12 justify-content-center">
-                        <div className="services">
-                            {/* Service Box 1 */}
-                            <div className="col-md-4  item">
 
-                                <div className="icon" id="coding" onClick={() => toggleElem(0, "coding")}>
+                {
 
-                                    <i className="fa fa-bar-chart" />{/* Icon */}
-                                </div>
-                                <h2>Coding</h2>{/* Title */}
-                                <p />{/* Description */}
-                            </div>
-                            {/* Service Box 2 */}
-                            <div className="col-md-4  item delay-05s">
-                                <div className="icon" id="ideation" onClick={() => toggleElem(1, "ideation")}>
-                                    <i className="fa fa-lightbulb-o" aria-hidden="true" />
-                                </div>
-                                <h2>Ideation</h2>{/* Title */}
-                                <p />{/* Description */}
-                            </div>
-                            {/* Service Box 3 */}
-                            <div className="col-md-4  item delay-1s">
-                                <div className="icon" id="education/mentoring" onClick={() => toggleElem(2, "education/mentoring")}>
-                                    <i className="fa fa-cubes" />{/* Icon */}
-                                </div>
-                                <h2>Education and Mentoring</h2>{/* Title */}
-                                <p />{/* Description */}
-                            </div>
-                            {/* Service Box 4 */}
+                    allTags.map(function (tag, idx) {
+                        return (
 
-                            <div className="col-md-6  item delay-1s">
-                                <div className="icon" id="social" onClick={() => toggleElem(3, "social")}>
-                                    <i className="fa fa-medkit" />{/* Icon */}
-                                </div>
-                                <h2>Socially Relevant Work</h2>{/* Title */}
-                                <p />{/* Description */}
-                            </div>
-                            <div className="col-md-6   item delay-1s">
-                                <div className="icon" id="Opinionat-ing" onClick={() => toggleElem(4, "Opinionat-ing")}>
-                                    <i className="fa fa-pencil" />{/* Icon */}
-                                </div>
-                                <h2>Debating/Opinionat-ing</h2>{/* Title */}
-                                <p />{/* Description */}
-                            </div>
-                        </div>
-                        <div className="clearfix" />
-                    </div>
-                </div>
+                            <Badge className="m-2 p-2" id={tag} variant="dark" onClick={() => toggleElem(idx, tag)} style={{ cursor: "pointer", background: 'rgb(211, 211, 211)', color: 'black' }}> {tag} </Badge>
+
+
+                        )
+                    })
+                }
+
+
             </div>
+            <Experiences name="Ongoing Work" list={current_work} isClicked={isClicked} icons={icons} />
+
+            <Experiences name="Past Work" list={positions} isClicked={isClicked} icons={icons} />
+
+            <Experiences name="Selected Projects/Technical Reports" list={projects} isClicked={isClicked} icons={icons} />
+
+            <Experiences name="Away from the Desk" list={extracurricular} isClicked={isClicked} icons={icons} />
+
         </section>
         {/* ==========================
   BLOG SECTION 
   =========================== */}
-        <section className="text-center section-padding color-bg" id="blog">
-            <div className="container">
-                {/* Headline */}
-                <div>
-                    <div className="col-md-12">
-                        <h1 className="arrow"> Some more details!</h1>
-                    </div>
 
-
-
-                    <Experiences name="Past Work" list={positions} isClicked={isClicked} icons={icons} />
-
-
-                    <Experiences name="Personal Projects" list={projects} isClicked={isClicked} icons={icons} />
-
-
-                    <Experiences name="Extracurriculars" list={extracurricular} isClicked={isClicked} icons={icons} />
-
-
-                </div><br /><br />
-                <div className="val">
-                </div>
-                {/* Blog Slider */}
-            </div>
-        </section>
     </>);
 
 }

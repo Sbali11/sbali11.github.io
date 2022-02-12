@@ -8,19 +8,23 @@ import "./assets/textrotator/simpletextrotator.css";
 import "./assets/flexslider/flexslider.css";
 import "./css/style.css";
 import "./css/animate.css";
+import Navbar from 'react-bootstrap/Navbar';
 function App() {
   return (
 
     <div className="App">
-        <meta charSet="utf-8" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* Website Title */}
-        <title>Shreya Bali</title>
-        {/* Bootstrap */}
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossOrigin="anonymous" />
-  
-      <Home/>
+      <Navbar bg="dark" variant="dark">
+        <a style={{"color": "white"}} href="https://drive.google.com/file/d/1yPI_9m8-c4YRtmTSp98fT2fBYDNt6vj8/view?usp=sharing" download>
+          Resume
+
+        </a>
+      </Navbar>
+      {/* Website Title */}
+      <title>Shreya Bali</title>
+      {/* Bootstrap */}
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossOrigin="anonymous" />
+
+      <Home />
     </div>
   );
 }
