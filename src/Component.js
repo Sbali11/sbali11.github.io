@@ -19,19 +19,23 @@ export default function Experiences(props) {
         var tags = Object.keys(data.tags);
         return (
 
-            <Card className="m-2" style={{ width: '100%', overflow: "auto"}}>
-                <Card.Header>
-                    <Accordion.Toggle style={{ width: '100%', "color": "#6512b2",  overflow: "auto" }} as={Button}
+            <Card className="m-2" >
+                <Card.Header style={{ width: '100%'}}>
+                    
+                
+                    <Accordion.Toggle style={{ width: '100%', "color": "#6512b2",  whiteSpace: 'pre-wrap', overflowWrap: 'break-word', }} as={Button}
                         variant="link" eventKey={key + 1}>
                         <div class="float-left">
                             <Card.Title >
-                                <div class="float-left">
+                                
+                                <div class="float-left" >
                                     {data.name}
 
                                 </div>
+                                
                             </Card.Title>
                             <br />
-                            <div class="float-left">
+                            <div class="float-left" >
                                 {data.position &&
                                     <div >
                                         {data.position},  {data.org} <br />
@@ -39,28 +43,33 @@ export default function Experiences(props) {
                                     </div>
                                 }
                             </div>
-
-                        </div>
-                        <div class="float-right">
+                            <br/>
+                            <br/>
+                        
+                        <div class="float-left" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word',}} >
                             {
 
                                 tags.map(function (tag) {
                                     if(props.isClicked[props.icons[tag]]){
-                                    return <Badge className="mr-1" variant="dark" style={{ overflow: "scroll", background: '#f8d776', color: 'black' }}>{tag} </Badge>
+                                    return <Badge className="mr-1" variant="dark" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word', background: '#f8d776', color: 'black' }}>{tag} </Badge>
                                     }
                                     else{
-                                        return <Badge className="mr-1" variant="dark" style={{ overflow: "scroll", background: 'rgb(211, 211, 211)', color: 'black' }}>{tag} </Badge>
+                                        return <Badge className="mr-1" variant="dark" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word', background: 'rgb(211, 211, 211)', color: 'black' }}>{tag} </Badge>
 
                                     }
                                 })
                             }
                             <br />
-                            <div class="float-right">
+                            </div>
+                            
+
+                        
+                        </div>
+                        <div class="float-right">
                                 {data.year}
                             </div>
-
-                        </div>
                     </Accordion.Toggle>
+                    
                 </Card.Header>
                 <Accordion.Collapse eventKey={key + 1}>
                     <Card.Body >
@@ -132,10 +141,10 @@ export default function Experiences(props) {
 
                                 tags.map(function (tag) {
                                     if(props.isClicked[props.icons[tag]]){
-                                    return <Badge className="mr-1" variant="dark" style={{ overflow: "scroll", background: '#f8d776', color: 'black' }}>{tag} </Badge>
+                                    return <Badge className="mr-1" variant="dark" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word', background: '#f8d776', color: 'black' }}>{tag} </Badge>
                                     }
                                     else{
-                                        return <Badge className="mr-1" variant="dark" style={{ overflow: "scroll", background: 'rgb(211, 211, 211)', color: 'black' }}>{tag} </Badge>
+                                        return <Badge className="mr-1" variant="dark" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word', background: 'rgb(211, 211, 211)', color: 'black' }}>{tag} </Badge>
 
                                     }
                                 })

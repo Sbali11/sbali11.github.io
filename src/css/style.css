@@ -1287,6 +1287,8 @@ ul.slides li {
 	color: #ffffff
 }
 
+.word-wrap{word-wrap: break-word;}
+
 .btn-youtube {
 	border: 1px solid #575395;
 	color: #e52d27
