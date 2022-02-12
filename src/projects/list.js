@@ -59,6 +59,7 @@ export const positions = [
         "year": "2020",
         "awards": "Placed second in Weather & Natural Disaster Category",
         "code": "https://github.com/Sbali11/PeatlandFirePrediction",
+        "poster": "https://drive.google.com/file/d/1BE8EV07vt-nwMyFeo2lV4h04sxqgZ3Ml/view?usp=sharing",
         "paper": "https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/icml2021/12/paper.pdf",
         "video": "https://www.climatechange.ai/papers/icml2021/12",
         "desc": 
@@ -125,6 +126,7 @@ export const positions = [
         "org": "Prof. Scott Fahlman, Dean Aldrucci",
         "year": "2019",
         "code": "https://github.com/Sbali11/Patent-Claims-Analysis",
+        "poster": "https://drive.google.com/file/d/1JxfNELMP1rygKALishSz2QgSur_tRLGt/view?usp=sharing", 
         "desc": "The project uses natural language parsing to understand the specialized text that occurs in patents. The code is written in Python and uses spaCy"
     },
     {

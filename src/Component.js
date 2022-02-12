@@ -88,6 +88,9 @@ export default function Experiences(props) {
                                 
                                 <Button style={{ color: "#6512b2", "margin-top": "10px" , "margin-bottom": "10px", "margin-right": "10px",}} variant="outline"> <a href={data.report} style={{ color: "#6512b2" }} >Report</a></Button>
                             }
+                            {data.poster && 
+                                <Button style={{ color: "#6512b2", "margin-top": "10px" , "margin-bottom": "10px", "margin-right": "10px",}} variant="outline"><a href={data.poster} style={{ color: "#6512b2" }}>Poster</a> </Button>
+                            }
                             {data.video &&
                                     <Button style={{ color: "#6512b2", "margin-top": "10px" , "margin-bottom": "10px", "margin-right": "10px",}} variant="outline"> <a href={data.video} style={{ color: "#6512b2" }}>Video</a> </Button>
                                 }
