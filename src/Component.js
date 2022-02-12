@@ -23,7 +23,7 @@ export default function Experiences(props) {
                 <Card.Header style={{ width: '100%'}}>
                     
                 
-                    <Accordion.Toggle style={{ width: '100%', "color": "#6512b2",  whiteSpace: 'pre-wrap', overflowWrap: 'break-word', }} as={Button}
+                    <Accordion.Toggle style={{ width: '100%', "color": "#6512b2",  whiteSpace: 'pre-wrap', overflowWrap: 'break-word',textAlign: "left" }} as={Button}
                         variant="link" eventKey={key + 1}>
                         <div class="float-left">
                             <Card.Title >
@@ -35,18 +35,20 @@ export default function Experiences(props) {
                                 
                             </Card.Title>
                             <br />
+                            {data.position && 
+                            (
                             <div class="float-left" >
-                                {data.position &&
+                                 
                                     <div >
                                         {data.position},  {data.org} <br />
 
                                     </div>
-                                }
+                                    <br/>
                             </div>
-                            <br/>
+                            )}
                             <br/>
                         
-                        <div class="float-left" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word',}} >
+                        <div class="float-left" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word', textAlign: "left"}} >
                             {
 
                                 tags.map(function (tag) {
