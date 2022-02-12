@@ -98,20 +98,26 @@ export default function Home() {
                 {/* WELCOME TEXT */}
                 <div className="row">
                     <center>
-                        <div className="col-md-8 col-md-offset-2">
+                        <div className="col-md-10 col-md-offset-1">
                             <h1 className="arrow"><span>$</span>whoami</h1>{/* Headline */}
                             {/* about / welcome text */}
 
-                            <p>
+                            <p style={{ textAlign: "left" }}>
                                 <b>
-                                    I'm currently a Fifth Year Master's Student at Carnegie Mellon School of Computer Science with a keen interest in Machine
+
+                                    Hello! I'm currently a Fifth Year Master's Student at Carnegie Mellon School of Computer Science with a keen interest in Machine
                                     Learning and Human Computer Interaction. I enjoy thinking about different ways in which
-                                    computer science can be used to make life better.
+                                    computer science can be used to make life better. If you're interested in any of my work or just want to reach out, feel free to drop me an email at sbali[at]andrew.cmu.edu !
 
                                     <br />
-                                    <br />
-                                    I *strongly* believe everything is a little better with music playing in the background, so here's a periodically updated list of songs I'm currently listening for you to play while scrolling through my website!
-                                </b></p>
+                                    
+                                </b>
+                            </p>
+                            <p style={{ textAlign: "left", color:"grey" }}>
+                                <b>
+                                    P.S. I *strongly* believe everything is better with music playing in the background, so here's a periodically updated list of songs I'm currently listening to for you to play while scrolling through my website!
+                                </b>
+                            </p>
                             <p />
                             <div class="mt-auto p-2 bd-highlight">
                                 <iframe src="https://open.spotify.com/embed/playlist/66phfa44ZZyEQw5JDvyDGe" width={300} height={200} frameBorder={0} allowTransparency="true" allow="encrypted-media" />
@@ -135,8 +141,8 @@ export default function Home() {
                     </div>
                 </div>
                 I spend my time on these things
-                <br/>
-                <br/>
+                <br />
+                <br />
                 {
 
                     allTags.map(function (tag, idx) {
