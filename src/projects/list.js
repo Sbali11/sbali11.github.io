@@ -1,7 +1,7 @@
 export const current_work = [
     {
         "name": "Nooks",
-        "org": "Expertise@Scale Lab, e-HeartLab", 
+        "org": "CMU Expertise@Scale Lab & e-HeartLab", 
         "position": "Research Assistant",
         "tags":
         {
@@ -180,16 +180,33 @@ export const projects = [
 export const extracurricular = [
     {
         "name": "Clean India",
-        "position": "Founder",
+        "position": "Founder, NGO",
         "tags":
         {
             "Socially Relevant Work": ["sanitation & environment"]
         },
         "year": "2013-now",
+        "website": "https://www.facebook.com/cleanindiams/",
         "desc": "Founder of NGO to optimize and improve sanitation practices in impoverished communities"
 
     },
+    {
+        "name": "Invited Talks",
+        "tags":
+        {
+            "Opinionat-ing/Talks": []
+        },
+        "year": "",
+        "desc": (
+            <ul>
+            <li> Youth in Technology, SFHS C.O.D.E Hack (2021)</li>
+            <li> Undergraduate Research Panel, Carnegie Mellon School of Computer Science (2020)</li>
+            <li> Slingshot Speaker Series(2020): <br/>
+                <tab/> - CMIMC(CMU), Stuyvesant High,  HackTJ, Bronx </li>
 
+            </ul>
+        )
+    },
 
     {
         "name": "Debating",
@@ -198,6 +215,6 @@ export const extracurricular = [
             "Opinionat-ing/Talks": []
         },
         "year": "2013-now",
-        "desc": "I've been passionate about debating ever since high school! Over the years, I've served as the convener of BVCMUN'16, chaired over 10 MUNs "
+        "desc": "I've been passionate about debating ever since high school and served as the Vice-President of CMU Debate(APDA) in 2020."
     },
 ]

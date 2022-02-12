@@ -19,14 +19,14 @@ export default function Experiences(props) {
         var tags = Object.keys(data.tags);
         return (
 
-            <Card className="m-2" >
-                <Card.Header style={{ width: '100%'}}>
+            <Card className="mb-3 mt-3 p-2" style={{ borderRadius: "15px", width: '100%',  }} >
+                <Card.Header style={{ width: '100%', borderRadius: "15px",  whiteSpace: 'pre-wrap', overflowWrap: 'break-word',}}>
                     
                 
-                    <Accordion.Toggle style={{ width: '100%', "color": "#6512b2",  whiteSpace: 'pre-wrap', overflowWrap: 'break-word',textAlign: "left" }} as={Button}
+                    <Accordion.Toggle style={{ borderRadius: "15px", width: '100%', "color": "#6512b2",  whiteSpace: 'pre-wrap', overflowWrap: 'break-word',textAlign: "left" }} as={Button}
                         variant="link" eventKey={key + 1}>
-                        <div class="float-left">
-                            <Card.Title >
+                        <div class="float-left" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word',}}>
+                            <Card.Title style={{ borderRadius: "15px", whiteSpace: 'pre-wrap', overflowWrap: 'break-word'}} >
                                 
                                 <div class="float-left" >
                                     {data.name}
@@ -37,18 +37,16 @@ export default function Experiences(props) {
                             <br />
                             {data.position && 
                             (
-                            <div class="float-left" >
+                            <div  style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word',}}>
                                  
-                                    <div >
+                                    <div  style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word',}}>
                                         {data.position},  {data.org} <br />
 
                                     </div>
                                     <br/>
                             </div>
                             )}
-                            <br/>
                         
-                        <div class="float-left" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word', textAlign: "left"}} >
                             {
 
                                 tags.map(function (tag) {
@@ -66,7 +64,6 @@ export default function Experiences(props) {
                             
 
                         
-                        </div>
                         <div class="float-right">
                                 {data.year}
                             </div>
@@ -201,7 +198,7 @@ export default function Experiences(props) {
             <center>
                 <div className="justify-content-center" style={{ width: '80%' }}>
                     {filtered.length > 0 &&
-                        <div class="float-left">
+                        <div class="float-left" >
 
                             <h4 className="arrow" style={{ color: 'grey' }}> {props.name} </h4>
                         </div>
@@ -210,7 +207,7 @@ export default function Experiences(props) {
                     <br />
                     <br />
                     <center>
-                        <Accordion className="justify-content-centerm-2" >
+                        <Accordion className="justify-content-centerm-2">
                             {
                                 res
                             }
