@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ShreyaBali/static/css/main.6cb95407.chunk.css",
-    "main.js": "/ShreyaBali/static/js/main.a69ebe16.chunk.js",
-    "main.js.map": "/ShreyaBali/static/js/main.a69ebe16.chunk.js.map",
+    "main.css": "/ShreyaBali/static/css/main.ff7a6130.chunk.css",
+    "main.js": "/ShreyaBali/static/js/main.5f391f47.chunk.js",
+    "main.js.map": "/ShreyaBali/static/js/main.5f391f47.chunk.js.map",
     "runtime-main.js": "/ShreyaBali/static/js/runtime-main.26825e3f.js",
     "runtime-main.js.map": "/ShreyaBali/static/js/runtime-main.26825e3f.js.map",
     "static/js/2.ba61901b.chunk.js": "/ShreyaBali/static/js/2.ba61901b.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.81985a2e.chunk.js": "/ShreyaBali/static/js/3.81985a2e.chunk.js",
     "static/js/3.81985a2e.chunk.js.map": "/ShreyaBali/static/js/3.81985a2e.chunk.js.map",
     "index.html": "/ShreyaBali/index.html",
-    "static/css/main.6cb95407.chunk.css.map": "/ShreyaBali/static/css/main.6cb95407.chunk.css.map",
+    "static/css/main.ff7a6130.chunk.css.map": "/ShreyaBali/static/css/main.ff7a6130.chunk.css.map",
     "static/js/2.ba61901b.chunk.js.LICENSE.txt": "/ShreyaBali/static/js/2.ba61901b.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/ShreyaBali/static/media/fontawesome-webfont.fb685a7c.woff2",
     "static/media/bootstrap.min.css": "/ShreyaBali/static/media/glyphicons-halflings-regular.e3cab037.woff",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.26825e3f.js",
     "static/js/2.ba61901b.chunk.js",
-    "static/css/main.6cb95407.chunk.css",
-    "static/js/main.a69ebe16.chunk.js"
+    "static/css/main.ff7a6130.chunk.css",
+    "static/js/main.5f391f47.chunk.js"
   ]
 }
