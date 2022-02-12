@@ -134,6 +134,21 @@ export const positions = [
 
 export const projects = [
     {
+        "name": "Towards GCNs that Run on CPUs",
+        
+        "tags":
+        {
+            "Parallel/Distributed Systems": [],
+            "Machine Learning": ["machine learning"]
+        },
+        "org": "self",
+        "year": "2021",
+        "report": "https://drive.google.com/file/d/15kp72M79kdsYAa8LL9pX2INKYcIWvinH/view?usp=sharing",
+        "code": "https://github.com/mayankj/740_Proj",
+        "desc": "On one hand, Graph neural networks (GNNs),an emerging deep learning model class that can extract meaningful representations from highly expressive graph-structured data are gaining popularity for a wide ranges of applications. On the other hand, as neural net architectures get deeper and deeper, the cost running modern ML algorithms efficiently is getting higher and higher. In this work, we explore techniques to make running GNNs, specifically GCNs, on everyday CPUs more feasible. Using the Wiki-CS dataset, we both analyze past approaches to optimize this class of algorithms and also suggest novel methods to optimize on the the specific structure and purpose of GCNs. We compare these approaches on several key factors including speed, cache performance and accuracy on the results."
+    },
+
+    {
         "name": "Parallel Image Processing Toolkit",
         
         "tags":
@@ -158,38 +173,15 @@ export const projects = [
         "org": "self",
         "year": "2020",
         "code": "https://github.com/RiaPradeep/VideoSound-Matching",
+        "report": "https://drive.google.com/file/d/1RqD-OX-V67RuaCUVTr0fUFEapBoCJcCI/view?usp=sharing",
         "desc": "The aim of the project is to see if the given audio and video sample belong to the same category. Several models for this problem were implemented each of which first creates an enCoding for the audio and video input independently, using various techniques, then maps them to the same space. We also presented a novel loss function for this problem, Multi-Similarity, which builds on Cosine-BCE with increased components in the regularized term. The code for the project was written using pytorch."
     },
 
 
-    {
-        "name": "Audio Sentiment Analysis",
-        
-        "tags":
-        {
-            "Machine Learning": ["machine learning"]
-        },
-        "org": "self",
-        "year": "2019",
-        "link": "https://github.com/Sbali11/OIL_interpreter",
-        "desc": "Keras-based machine learning project on audio sentiment analysis using self-learning. The project was implemented using the RAVDESS dataset and classified the audio into six categories-neutral, calm, happy, sad, angry, fearful, disgruntled, and surprised"
-    },
 
 ]
 
 export const extracurricular = [
-    {
-        "name": "Clean India",
-        "position": "Founder, NGO",
-        "tags":
-        {
-            "Socially Relevant Work": ["sanitation & environment"]
-        },
-        "year": "2013-now",
-        "website": "https://www.facebook.com/cleanindiams/",
-        "desc": "Founder of NGO to optimize and improve sanitation practices in impoverished communities"
-
-    },
     {
         "name": "Invited Talks",
         "tags":
@@ -207,6 +199,19 @@ export const extracurricular = [
             </ul>
         )
     },
+    {
+        "name": "Clean India",
+        "position": "Founder, NGO",
+        "tags":
+        {
+            "Socially Relevant Work": ["sanitation & environment"]
+        },
+        "year": "2013-now",
+        "website": "https://www.facebook.com/cleanindiams/",
+        "desc": "Founder of NGO to optimize and improve sanitation practices in impoverished communities"
+
+    },
+
 
     {
         "name": "Debating",

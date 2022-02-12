@@ -13,11 +13,13 @@ function App() {
   return (
 
     <div className="App">
-      <Navbar bg="dark" variant="dark">
-        <a style={{"color": "white"}} href="https://drive.google.com/file/d/1yPI_9m8-c4YRtmTSp98fT2fBYDNt6vj8/view?usp=sharing" download>
+      <Navbar variant="dark" style={{ backgroundColor: 'black' }}>
+      <left>
+        <a style={{"color": "white"}} href="https://drive.google.com/file/d/17erqxSjix1Bt_uOXgYmGwpkZWgg_60qa/view?usp=sharing" download>
           Resume
 
         </a>
+      </left>
       </Navbar>
       {/* Website Title */}
       <title>Shreya Bali</title>

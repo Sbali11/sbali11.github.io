@@ -194,18 +194,21 @@ export default function Experiences(props) {
 
         <>
 
-            <br />
+            
             <center>
                 <div className="justify-content-center" style={{ width: '80%' }}>
                     {filtered.length > 0 &&
+                   
                         <div class="float-left" >
+                             <br/>
 
                             <h4 className="arrow" style={{ color: 'grey' }}> {props.name} </h4>
+                            <br/>
+                            
                         </div>
 
                     }
-                    <br />
-                    <br />
+                    
                     <center>
                         <Accordion className="justify-content-centerm-2">
                             {
