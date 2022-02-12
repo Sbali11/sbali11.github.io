@@ -12,7 +12,13 @@ export const current_work = [
         },
         "year": "2021-2022",
         "website": "https://nooks.vercel.app/",
-        "desc": "Nooks is a part of an ongoing research to help increase workplace connectedness. The Slack Bot is designed to help people form long-lasting connections by 'bumping' into people online. "
+        "desc": <>
+        (with Pranav Khadpe, Chinmay Kulkarni and Geoff Kauffman)
+        <br/>
+        <br/>
+            Nooks is a part of an ongoing research to help increase workplace connectedness. The Slack Bot is designed to help people form long-lasting connections by 'bumping' into people online. 
+            
+        </>
     },
 ]
 export const positions = [
@@ -55,7 +61,13 @@ export const positions = [
         "code": "https://github.com/Sbali11/PeatlandFirePrediction",
         "paper": "https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/icml2021/12/paper.pdf",
         "video": "https://www.climatechange.ai/papers/icml2021/12",
-        "desc": "I was selected in a group of 6 undergraduates to represent Carnegie Mellon in a Machine Learning Research competition(ProjectX) hosted by the University of Toronto. During this project, we worked on improving Peatland Fire Prediction using Deep Learning and proposed and developed novel models in addition to constructing a new dataset for Peatland Fires in Canada. The work was published in the ICML'21 Climate Change Workshop"
+        "desc": 
+        <>
+        (with Sydney Zheng, Blair Chen, Anirudh Chowdhury, Yue Wu, Akshina Gupta, Justin Khim , Reid Simmons)
+        <br/>
+        <br/>
+        I was selected in a group of 6 undergraduates to represent Carnegie Mellon in a Machine Learning Research competition(ProjectX) hosted by the University of Toronto. During this project, we worked on improving Peatland Fire Prediction using Deep Learning and proposed and developed novel models in addition to constructing a new dataset for Peatland Fires in Canada. The work was published in the ICML'21 Climate Change Workshop
+        </>
     },
 
 
@@ -145,7 +157,12 @@ export const projects = [
         "year": "2021",
         "report": "https://drive.google.com/file/d/15kp72M79kdsYAa8LL9pX2INKYcIWvinH/view?usp=sharing",
         "code": "https://github.com/mayankj/740_Proj",
-        "desc": "On one hand, Graph neural networks (GNNs),an emerging deep learning model class that can extract meaningful representations from highly expressive graph-structured data are gaining popularity for a wide ranges of applications. On the other hand, as neural net architectures get deeper and deeper, the cost running modern ML algorithms efficiently is getting higher and higher. In this work, we explore techniques to make running GNNs, specifically GCNs, on everyday CPUs more feasible. Using the Wiki-CS dataset, we both analyze past approaches to optimize this class of algorithms and also suggest novel methods to optimize on the the specific structure and purpose of GCNs. We compare these approaches on several key factors including speed, cache performance and accuracy on the results."
+        "desc": <>
+        (with Mayank Jain)
+        <br/>
+        <br/>
+        On one hand, Graph neural networks (GNNs),an emerging deep learning model class that can extract meaningful representations from highly expressive graph-structured data are gaining popularity for a wide ranges of applications. On the other hand, as neural net architectures get deeper and deeper, the cost running modern ML algorithms efficiently is getting higher and higher. In this work, we explore techniques to make running GNNs, specifically GCNs, on everyday CPUs more feasible. Using the Wiki-CS dataset, we both analyze past approaches to optimize this class of algorithms and also suggest novel methods to optimize on the the specific structure and purpose of GCNs. We compare these approaches on several key factors including speed, cache performance and accuracy on the results.
+        </>
     },
 
     {
@@ -160,7 +177,13 @@ export const projects = [
         "year": "2020",
         "report": "https://kmeshx.github.io/pdfs/418_CP__Copy_.pdf",
         "code": "https://github.com/kmeshx/Parallel-Image-Processing-Toolkit",
-        "desc": "Implemented an image processing toolbox for several image segmentation algorithms including Otsu Binarization, Edge Detection, and K-Means. The sequential versions of the algorithms were implemented using C++, and the parallel versions were implemented in both OpenMP and CUDA. The goal of this project was to implement and analyze the scalability, scope, and benefit of performing image segmentation in parallel"
+        "desc": 
+        <>
+        (with Kusha Maharshi)
+        <br/>
+        <br/>
+        Implemented an image processing toolbox for several image segmentation algorithms including Otsu Binarization, Edge Detection, and K-Means. The sequential versions of the algorithms were implemented using C++, and the parallel versions were implemented in both OpenMP and CUDA. The goal of this project was to implement and analyze the scalability, scope, and benefit of performing image segmentation in parallel
+        </>
     },
 
 
@@ -174,7 +197,13 @@ export const projects = [
         "year": "2020",
         "code": "https://github.com/RiaPradeep/VideoSound-Matching",
         "report": "https://drive.google.com/file/d/1RqD-OX-V67RuaCUVTr0fUFEapBoCJcCI/view?usp=sharing",
-        "desc": "The aim of the project is to see if the given audio and video sample belong to the same category. Several models for this problem were implemented each of which first creates an enCoding for the audio and video input independently, using various techniques, then maps them to the same space. We also presented a novel loss function for this problem, Multi-Similarity, which builds on Cosine-BCE with increased components in the regularized term. The code for the project was written using pytorch."
+        "desc": 
+        <>
+        (with Ria Pradeep)
+        <br/>
+        <br/>
+        The aim of the project is to see if the given audio and video sample belong to the same category. Several models for this problem were implemented each of which first creates an enCoding for the audio and video input independently, using various techniques, then maps them to the same space. We also presented a novel loss function for this problem, Multi-Similarity, which builds on Cosine-BCE with increased components in the regularized term. The code for the project was written using pytorch.
+        </>
     },
 
 
@@ -201,7 +230,8 @@ export const extracurricular = [
     },
     {
         "name": "Clean India",
-        "position": "Founder, NGO",
+        "position": "Founder",
+        "org": "NGO",
         "tags":
         {
             "Socially Relevant Work": ["sanitation & environment"]

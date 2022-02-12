@@ -153,7 +153,7 @@ export default function Home() {
 
             <Experiences name="Selected Projects/Technical Reports" list={projects} isClicked={isClicked} icons={icons} />
 
-            <Experiences name="Away from the Laptop (~Somewhat~) " list={extracurricular} isClicked={isClicked} icons={icons} />
+            <Experiences name="When I'm (~somewhat~) away from my Laptop" list={extracurricular} isClicked={isClicked} icons={icons} />
 
         </section>
         {/* ==========================

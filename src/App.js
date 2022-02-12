@@ -13,7 +13,7 @@ function App() {
   return (
 
     <div className="App">
-      <Navbar variant="dark" style={{ backgroundColor: 'black' }}>
+      <Navbar variant="dark" style={{ backgroundColor: 'black', textAlign: "left"}}>
       <left>
         <a style={{"color": "white"}} href="https://drive.google.com/file/d/17erqxSjix1Bt_uOXgYmGwpkZWgg_60qa/view?usp=sharing" download>
           Resume
