@@ -451,13 +451,13 @@ table {
 
 /* ==========================================================================parallax========================================================================== */
 .parallax {
-	background: url('../img/header-bg.jpg') no-repeat center fixed; 
+	background: url('../img/header-bg.jpg') no-repeat center top fixed; 
 	width: 100vw;
 	min-height: 100vh;
 	
   /* Set a specific height */
   /* Create the parallax scrolling effect */
-  top: 0;
+  top: 10%;
   left: 0;
   background-repeat: no-repeat;
 
