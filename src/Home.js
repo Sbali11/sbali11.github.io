@@ -13,11 +13,11 @@ export default function Home() {
         "Education/mentoring": 4,
         "Socially Relevant Work": 5,
         "Opinionat-ing/Talks": 6,
-        
+
 
     }
     const [isClicked, setIsClicked] = useState([false, false, false, false, false, false, false]);
-    const [allTags, setAllTags] = useState(["Machine Learning", "Human Computer Interaction",  "Parallel/Distributed Systems", "Research", "Education/mentoring", "Socially Relevant Work", "Opinionat-ing/Talks"]);
+    const [allTags, setAllTags] = useState(["Machine Learning", "Human Computer Interaction", "Parallel/Distributed Systems", "Research", "Education/mentoring", "Socially Relevant Work", "Opinionat-ing/Talks"]);
 
     const [count, setCount] = useState([0, 0, 0, 0, 0]);
     const [interested, setInterested] = useState(new Set());
@@ -63,7 +63,6 @@ export default function Home() {
             {/*/container*/}
             {/* Header Image */}
             <section >
-
                 <div className="parallax">
                     {/* Slider Button (don't edit!)*/}
 
@@ -98,26 +97,26 @@ export default function Home() {
             <div className="container">
                 {/* WELCOME TEXT */}
                 <div className="row">
-                <center>
-                    <div className="col-md-8 col-md-offset-2">
-                        <h1 className="arrow">A little <span>about</span> me</h1>{/* Headline */}
-                        {/* about / welcome text */}
-                        
-                        <p>
-                            <b>
-                                I'm currently a Fifth Year Master's Student at Carnegie Mellon School of Computer Science with a keen interest in Machine
-                                Learning and Human Computer Interaction. I enjoy thinking about different ways in which
-                                computer science can be used to make life better.
+                    <center>
+                        <div className="col-md-8 col-md-offset-2">
+                            <h1 className="arrow">A little <span>about</span> me</h1>{/* Headline */}
+                            {/* about / welcome text */}
 
-                                <br />
-                                <br />
-                                I believe everything is a little better with music playing in the background, so here's a periodically updated list of songs I'm currently listening for you to play while scrolling through my website!
-                            </b></p>
-                        <p />
-                        <div class="mt-auto p-2 bd-highlight">
-                            <iframe src="https://open.spotify.com/embed/playlist/66phfa44ZZyEQw5JDvyDGe" width={300} height={200} frameBorder={0} allowTransparency="true" allow="encrypted-media" />
+                            <p>
+                                <b>
+                                    I'm currently a Fifth Year Master's Student at Carnegie Mellon School of Computer Science with a keen interest in Machine
+                                    Learning and Human Computer Interaction. I enjoy thinking about different ways in which
+                                    computer science can be used to make life better.
+
+                                    <br />
+                                    <br />
+                                    I believe everything is a little better with music playing in the background, so here's a periodically updated list of songs I'm currently listening for you to play while scrolling through my website!
+                                </b></p>
+                            <p />
+                            <div class="mt-auto p-2 bd-highlight">
+                                <iframe src="https://open.spotify.com/embed/playlist/66phfa44ZZyEQw5JDvyDGe" width={300} height={200} frameBorder={0} allowTransparency="true" allow="encrypted-media" />
+                            </div>
                         </div>
-                    </div>
                     </center>
                 </div>
             </div>
@@ -151,13 +150,13 @@ export default function Home() {
 
             </div>
             <left>
-            <Experiences name="Ongoing Work" list={current_work} isClicked={isClicked} icons={icons} />
+                <Experiences name="Ongoing Work" list={current_work} isClicked={isClicked} icons={icons} />
 
-            <Experiences name="Past Work" list={positions} isClicked={isClicked} icons={icons} />
+                <Experiences name="Past Work" list={positions} isClicked={isClicked} icons={icons} />
 
-            <Experiences name="Selected Projects/Technical Reports" list={projects} isClicked={isClicked} icons={icons} />
+                <Experiences name="Selected Projects/Technical Reports" list={projects} isClicked={isClicked} icons={icons} />
 
-            <Experiences name="When I'm (~somewhat~) away from my Laptop" list={extracurricular} isClicked={isClicked} icons={icons} />
+                <Experiences name="When I'm (~somewhat~) away from my Laptop" list={extracurricular} isClicked={isClicked} icons={icons} />
             </left>
         </section>
         {/* ==========================

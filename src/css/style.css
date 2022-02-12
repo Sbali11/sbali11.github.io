@@ -452,7 +452,7 @@ table {
 /* ==========================================================================parallax========================================================================== */
 .parallax {
 	background: url('../img/header-bg.jpg') no-repeat;
-  height: 1000px;
+	height: 1000px;
   /* Set a specific height */
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
