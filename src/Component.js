@@ -196,7 +196,7 @@ export default function Experiences(props) {
 
             
             <center>
-                <div className="justify-content-center" style={{ width: '80%' }} >
+                <div className="justify-content-center" style={{ width: '100%' }} >
                     {filtered.length > 0 &&
                    
                         <div class="float-left" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word', textAlign: "left" }}>

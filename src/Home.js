@@ -98,27 +98,28 @@ export default function Home() {
                 {/* WELCOME TEXT */}
                 <div className="row">
                     <center>
-                        <div className="col-md-10 col-md-offset-1">
+                        <div className="col-md-12 ">
                             <h1 className="arrow"><span>$</span>whoami</h1>{/* Headline */}
                             {/* about / welcome text */}
-
-                            <p style={{ textAlign: "left" }}>
-                                <b>
-
+                            <div class="float-left " style={{ "text-align": "left", color: "white" }}>
+                               
                                     Hello! I'm currently a Fifth Year Master's Student at Carnegie Mellon School of Computer Science with a keen interest in Machine
                                     Learning and Human Computer Interaction. I enjoy thinking about different ways in which
                                     computer science can be used to make life better. If you're interested in any of my work or just want to reach out, feel free to drop me an email at sbali[at]andrew.cmu.edu !
+                                
+                                <br />
+                                <br />
 
-                                    <br />
-                                    
-                                </b>
-                            </p>
-                            <p style={{ textAlign: "left", color:"grey" }}>
-                                <b>
-                                    P.S. I *strongly* believe everything is better with music playing in the background, so here's a periodically updated list of songs I'm currently listening to for you to play while scrolling through my website!
-                                </b>
-                            </p>
-                            <p />
+
+                            </div>
+                            <div class="float-left text-secondary" style={{ "text-align": "left", color: "white" }}>
+
+                                P.S. I *strongly* believe everything is better with music playing in the background, so here's a periodically updated list of songs I'm currently listening to for you to play while scrolling through my website!
+
+                                <br />
+                                <br />
+                            </div>
+                           
                             <div class="mt-auto p-2 bd-highlight">
                                 <iframe src="https://open.spotify.com/embed/playlist/66phfa44ZZyEQw5JDvyDGe" width={300} height={200} frameBorder={0} allowTransparency="true" allow="encrypted-media" />
                             </div>
@@ -136,32 +137,33 @@ export default function Home() {
             <div className="container">
                 {/* Headline */}
                 <div className="row">
-                    <div className="col-md-12">
+                    <div className="col-md-12 ">
                         <h1 className="arrow"><span>$</span>ps aux </h1>
+
+                        I spend my time on these things
+                        <br />
+                        <br />
+                        {
+
+                            allTags.map(function (tag, idx) {
+                                return (
+
+                                    <Badge className="m-2 p-2" id={tag} variant="dark" onClick={() => toggleElem(idx, tag)} style={{ cursor: "pointer", background: 'rgb(211, 211, 211)', color: 'black' }}> {tag} </Badge>
+
+
+                                )
+                            })
+                        }
+
+                        <div style={{ textAlign: "left" }}>
+                            <Experiences name="Ongoing Work" list={current_work} isClicked={isClicked} icons={icons} />
+                            <Experiences name="Past Work" list={positions} isClicked={isClicked} icons={icons} />
+                            <Experiences name="Selected Projects/Technical Reports" list={projects} isClicked={isClicked} icons={icons} />
+                            <Experiences name="When I'm (~somewhat~) away from my Laptop" list={extracurricular} isClicked={isClicked} icons={icons} />
+                        </div>
                     </div>
                 </div>
-                I spend my time on these things
-                <br />
-                <br />
-                {
 
-                    allTags.map(function (tag, idx) {
-                        return (
-
-                            <Badge className="m-2 p-2" id={tag} variant="dark" onClick={() => toggleElem(idx, tag)} style={{ cursor: "pointer", background: 'rgb(211, 211, 211)', color: 'black' }}> {tag} </Badge>
-
-
-                        )
-                    })
-                }
-
-
-            </div>
-            <div style={{textAlign: "left"}}>
-                <Experiences name="Ongoing Work" list={current_work} isClicked={isClicked} icons={icons} />
-                <Experiences name="Past Work" list={positions} isClicked={isClicked} icons={icons} />
-                <Experiences name="Selected Projects/Technical Reports" list={projects} isClicked={isClicked} icons={icons} />
-                <Experiences name="When I'm (~somewhat~) away from my Laptop" list={extracurricular} isClicked={isClicked} icons={icons} />
             </div>
         </section>
         {/* ==========================
