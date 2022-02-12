@@ -157,15 +157,12 @@ export default function Home() {
 
 
             </div>
-            <left>
+            <div style={{textAlign: "left"}}>
                 <Experiences name="Ongoing Work" list={current_work} isClicked={isClicked} icons={icons} />
-
                 <Experiences name="Past Work" list={positions} isClicked={isClicked} icons={icons} />
-
                 <Experiences name="Selected Projects/Technical Reports" list={projects} isClicked={isClicked} icons={icons} />
-
                 <Experiences name="When I'm (~somewhat~) away from my Laptop" list={extracurricular} isClicked={isClicked} icons={icons} />
-            </left>
+            </div>
         </section>
         {/* ==========================
   BLOG SECTION 
