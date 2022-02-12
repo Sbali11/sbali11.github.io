@@ -459,7 +459,6 @@ table {
   /* Create the parallax scrolling effect */
   top: 10%;
   left: 0;
-  background-repeat: no-repeat;
 
 }
 .bg {
