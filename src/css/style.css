@@ -38,7 +38,7 @@ p {
 	color:#8c9398;
 	word-spacing:1px;
 	line-height:25px;
-	font-size:14px;
+	font-size:20px;
 }
 h2 {
 	font-size:15px;
@@ -563,13 +563,11 @@ table {
 	margin:50px 0 0;
 }
 h1.arrow {
-	font-size: 16px;
-	text-transform:uppercase;
+	font-size: 25px;
 	color:#353535;
 	letter-spacing: 4px;
 	background:url('../img/h1-bg.png') no-repeat center bottom;
 	padding-bottom:30px;
-	font-weight: bold;
 }
 h1.arrow span {
     color: #787676;

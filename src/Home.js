@@ -99,7 +99,7 @@ export default function Home() {
                 <div className="row">
                     <center>
                         <div className="col-md-8 col-md-offset-2">
-                            <h1 className="arrow">A little <span>about</span> me</h1>{/* Headline */}
+                            <h1 className="arrow"><span>$</span>whoami</h1>{/* Headline */}
                             {/* about / welcome text */}
 
                             <p>
@@ -110,7 +110,7 @@ export default function Home() {
 
                                     <br />
                                     <br />
-                                    I believe everything is a little better with music playing in the background, so here's a periodically updated list of songs I'm currently listening for you to play while scrolling through my website!
+                                    I *strongly* believe everything is a little better with music playing in the background, so here's a periodically updated list of songs I'm currently listening for you to play while scrolling through my website!
                                 </b></p>
                             <p />
                             <div class="mt-auto p-2 bd-highlight">
@@ -131,10 +131,12 @@ export default function Home() {
                 {/* Headline */}
                 <div className="row">
                     <div className="col-md-12">
-                        <h1 className="arrow">I spend my time on these things</h1>
+                        <h1 className="arrow"><span>$</span>ps aux </h1>
                     </div>
                 </div>
-
+                I spend my time on these things
+                <br/>
+                <br/>
                 {
 
                     allTags.map(function (tag, idx) {
