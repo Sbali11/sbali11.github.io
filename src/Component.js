@@ -20,18 +20,15 @@ export default function Experiences(props) {
         return (
 
             <Card className="mb-3 mt-3 p-2" style={{ borderRadius: "15px", width: '100%',  }} >
-                <Card.Header style={{ width: '100%', borderRadius: "15px",  whiteSpace: 'pre-wrap', overflowWrap: 'break-word',}}>
+                <Card.Header style={{ width: '100%', borderRadius: "15px",  whiteSpace: 'pre-wrap', overflowWrap: 'break-word', textAlign: "left"}}>
                     
                 
                     <Accordion.Toggle style={{ borderRadius: "15px", width: '100%', "color": "#6512b2",  whiteSpace: 'pre-wrap', overflowWrap: 'break-word',textAlign: "left" }} as={Button}
                         variant="link" eventKey={key + 1}>
-                        <div class="float-left" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word',}}>
-                            <Card.Title style={{ borderRadius: "15px", whiteSpace: 'pre-wrap', overflowWrap: 'break-word'}} >
+                        <div class="float-left" style={{ textAlign: "left", whiteSpace: 'pre-wrap', overflowWrap: 'break-word',}}>
+                            <Card.Title style={{ borderRadius: "15px", whiteSpace: 'pre-wrap', overflowWrap: 'break-word', textAlign: "left"}} >
                                 
-                                <div class="float-left" >
-                                    {data.name}
-
-                                </div>
+                                <div class="float-left" style={{ borderRadius: "15px", whiteSpace: 'pre-wrap', overflowWrap: 'break-word', textAlign: "left"}}>{data.name}</div>
                                 
                             </Card.Title>
                             <br />

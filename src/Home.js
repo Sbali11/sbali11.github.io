@@ -98,9 +98,11 @@ export default function Home() {
             <div className="container">
                 {/* WELCOME TEXT */}
                 <div className="row">
+                <center>
                     <div className="col-md-8 col-md-offset-2">
                         <h1 className="arrow">A little <span>about</span> me</h1>{/* Headline */}
                         {/* about / welcome text */}
+                        
                         <p>
                             <b>
                                 I'm currently a Fifth Year Master's Student at Carnegie Mellon School of Computer Science with a keen interest in Machine
@@ -116,6 +118,7 @@ export default function Home() {
                             <iframe src="https://open.spotify.com/embed/playlist/66phfa44ZZyEQw5JDvyDGe" width={300} height={200} frameBorder={0} allowTransparency="true" allow="encrypted-media" />
                         </div>
                     </div>
+                    </center>
                 </div>
             </div>
         </section>
@@ -147,6 +150,7 @@ export default function Home() {
 
 
             </div>
+            <left>
             <Experiences name="Ongoing Work" list={current_work} isClicked={isClicked} icons={icons} />
 
             <Experiences name="Past Work" list={positions} isClicked={isClicked} icons={icons} />
@@ -154,7 +158,7 @@ export default function Home() {
             <Experiences name="Selected Projects/Technical Reports" list={projects} isClicked={isClicked} icons={icons} />
 
             <Experiences name="When I'm (~somewhat~) away from my Laptop" list={extracurricular} isClicked={isClicked} icons={icons} />
-
+            </left>
         </section>
         {/* ==========================
   BLOG SECTION 
