@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ShreyaBali/static/css/main.ff7a6130.chunk.css",
-    "main.js": "/ShreyaBali/static/js/main.5298e33c.chunk.js",
-    "main.js.map": "/ShreyaBali/static/js/main.5298e33c.chunk.js.map",
+    "main.js": "/ShreyaBali/static/js/main.477ac654.chunk.js",
+    "main.js.map": "/ShreyaBali/static/js/main.477ac654.chunk.js.map",
     "runtime-main.js": "/ShreyaBali/static/js/runtime-main.26825e3f.js",
     "runtime-main.js.map": "/ShreyaBali/static/js/runtime-main.26825e3f.js.map",
-    "static/js/2.ba61901b.chunk.js": "/ShreyaBali/static/js/2.ba61901b.chunk.js",
-    "static/js/2.ba61901b.chunk.js.map": "/ShreyaBali/static/js/2.ba61901b.chunk.js.map",
+    "static/js/2.766faf2c.chunk.js": "/ShreyaBali/static/js/2.766faf2c.chunk.js",
+    "static/js/2.766faf2c.chunk.js.map": "/ShreyaBali/static/js/2.766faf2c.chunk.js.map",
     "static/js/3.81985a2e.chunk.js": "/ShreyaBali/static/js/3.81985a2e.chunk.js",
     "static/js/3.81985a2e.chunk.js.map": "/ShreyaBali/static/js/3.81985a2e.chunk.js.map",
     "index.html": "/ShreyaBali/index.html",
     "static/css/main.ff7a6130.chunk.css.map": "/ShreyaBali/static/css/main.ff7a6130.chunk.css.map",
-    "static/js/2.ba61901b.chunk.js.LICENSE.txt": "/ShreyaBali/static/js/2.ba61901b.chunk.js.LICENSE.txt",
+    "static/js/2.766faf2c.chunk.js.LICENSE.txt": "/ShreyaBali/static/js/2.766faf2c.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/ShreyaBali/static/media/fontawesome-webfont.fb685a7c.woff2",
     "static/media/bootstrap.min.css": "/ShreyaBali/static/media/glyphicons-halflings-regular.e3cab037.woff",
     "static/media/style.css": "/ShreyaBali/static/media/header-bg.05646a47.jpg",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.26825e3f.js",
-    "static/js/2.ba61901b.chunk.js",
+    "static/js/2.766faf2c.chunk.js",
     "static/css/main.ff7a6130.chunk.css",
-    "static/js/main.5298e33c.chunk.js"
+    "static/js/main.477ac654.chunk.js"
   ]
 }
