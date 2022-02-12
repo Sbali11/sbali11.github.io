@@ -19,9 +19,9 @@ export default function Experiences(props) {
         var tags = Object.keys(data.tags);
         return (
 
-            <Card className="m-2" style={{ width: '100%' }}>
+            <Card className="m-2" style={{ width: '100%', overflow: "auto"}}>
                 <Card.Header>
-                    <Accordion.Toggle style={{ width: '100%', "color": "#6512b2" }} as={Button}
+                    <Accordion.Toggle style={{ width: '100%', "color": "#6512b2",  overflow: "auto" }} as={Button}
                         variant="link" eventKey={key + 1}>
                         <div class="float-left">
                             <Card.Title >
@@ -63,7 +63,7 @@ export default function Experiences(props) {
                     </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey={key + 1}>
-                    <Card.Body>
+                    <Card.Body >
 
 
 
