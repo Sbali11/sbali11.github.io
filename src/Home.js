@@ -159,7 +159,7 @@ export default function Home() {
                             <Experiences name="Ongoing Work" list={current_work} isClicked={isClicked} icons={icons} />
                             <Experiences name="Past Work" list={positions} isClicked={isClicked} icons={icons} />
                             <Experiences name="Selected Projects/Technical Reports" list={projects} isClicked={isClicked} icons={icons} />
-                            <Experiences name="When I'm (~somewhat~) away from my Laptop" list={extracurricular} isClicked={isClicked} icons={icons} />
+                            <Experiences name="When I'm (~somewhat~) away from my laptop" list={extracurricular} isClicked={isClicked} icons={icons} />
                         </div>
                     </div>
                 </div>
