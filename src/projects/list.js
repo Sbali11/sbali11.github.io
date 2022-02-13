@@ -36,14 +36,14 @@ export const positions = [
     {
         "name": "Startup",
         "org": "Slingshot", 
-        "position": "Initial Hire",
+        "position": "COO",
         "tags":
         {
             "Education/mentoring": []
         },
         "year": "2021",
         "website": "http://slingshotahead.com/",
-        "desc": "Over the Fall, I worked CMU-spun startup matching highly motivated high school students to startups. I worked on different parts of the startup including conducting talks at schools & competitions, startup & client outreach, pitch preparation, managing & hiring teams, product ideation and more "
+        "desc": "Over the Fall, I worked at a CMU-spun startup matching highly motivated high school students to startups. I worked on different parts of the startup including conducting talks at schools & competitions, startup & client outreach, pitch preparation, managing & hiring teams and product ideation "
     },
 
     {
@@ -68,7 +68,7 @@ export const positions = [
         (with Sydney Zheng, Blair Chen, Anirudh Chowdhury, Yue Wu, Akshina Gupta, Justin Khim , Reid Simmons)
         <br/>
         <br/>
-        I was selected in a group of 6 undergraduates to represent Carnegie Mellon in a Machine Learning Research competition(ProjectX) hosted by the University of Toronto. During this project, we worked on improving Peatland Fire Prediction using Deep Learning and proposed and developed novel models in addition to constructing a new dataset for Peatland Fires in Canada. The work was published in the ICML'21 Climate Change Workshop
+        In Fall 2020, I was selected in a group of 6 undergraduates to represent Carnegie Mellon in a Machine Learning Research competition(ProjectX) hosted by the University of Toronto. During this project, we worked on improving Peatland Fire Prediction using Deep Learning and proposed and developed novel models in addition to constructing a new dataset for Peatland Fires in Canada. The work was published in the ICML'21 Climate Change Workshop
         </>
     },
 
@@ -84,7 +84,7 @@ export const positions = [
         },
         "org": "CMU Multimodal Lab",
         "year": "2019-2020",
-        "desc": "Worked as machine learning Research associate in the MultiComp Lab in the area of audio source separation. \n- As a part of the project, I helped in the construction of a novel dataset(WildMix) that poses a new milestone in this area by including several(53) diverse categories of audio sounds in contrast to others that have limited categories. \n Further, worked on both constructing several baselines for the project and developing new models that exceed performance on the state of the art.\n As a part of my work, I also mentored two sophomore Research candidates by allocating work, holding meetings and walking them through the Research process for a semester"
+        "desc": "From Fall 2019 to 2020, I worked as a Machine Learning Research Assistant(Associate in Fall 2020) in the MultiComp Lab in the area of audio source separation. \n- As a part of the project, I helped in the construction of a novel dataset(WildMix) that poses a new milestone in this area by including several(53) diverse categories of audio sounds in contrast to others that have limited categories. I worked on both constructing several baselines for the project and developing new models that exceed performance on the state of the art.\n\n As a part of my work, I also mentored two sophomore Research candidates by allocating work, holding meetings and walking them through the Research process for a semester"
     },
 
     {
@@ -97,7 +97,7 @@ export const positions = [
         "website": "https://diderot.one/",
         "org": "Diderot",
         "year": "2019",
-        "desc": "Machine Learning Research Assistant for a CMU-based Startup: Diderot under Prof. Anil Ada and Prof. Umut Acar\n Worked on implicit linking using NLP for an online platform that allows instructors to upload and share their course content, allowing students to refer to relevant material easily."
+        "desc": "In Fall 2019, I worked as a Machine Learning Research Assistant for a CMU-based Startup: Diderot under Prof. Anil Ada and Prof. Umut Acar\n During my time here, I worked on implicit linking using NLP for an online platform that allows instructors to upload and share their course content, allowing students to refer to relevant material easily."
 
     },
 
@@ -110,7 +110,7 @@ export const positions = [
         },
         "org": "Morgan Stanley Business intelligence",
         "year": "2019",
-        "desc": "During the summer of 2019, I worked as a tech analyst at Morgan Stanley, New York under the Busines Intelligence Group \nDuring the internship, my main project was to convert the data extraction process from a sequential execution to a parallel execution running on a cluster using Spark with Scala, thus increasing the efficiency of the entire data processing pipeline. also undertook two flask based side projects: \n Detecting inefficiencies in category definitions: The website allows for easy additions of new category definitions, seeing the split in finances and overall automated analysis of defined category partitions\n Searching for existing reports : I created a website that allows the BI units to easily search for pre-existing reporting satisfying constraints to prevent duplication"
+        "desc": "During the Summer of 2019, I worked as a tech analyst at Morgan Stanley, New York under the Busines Intelligence Group \nDuring the internship, my main project was to convert the data extraction process from a sequential execution to a parallel execution running on a cluster using Spark with Scala, thus increasing the efficiency of the entire data processing pipeline. also undertook two flask based side projects: \n Detecting inefficiencies in category definitions: The website allows for easy additions of new category definitions, seeing the split in finances and overall automated analysis of defined category partitions\n Searching for existing reports : I created a website that allows the BI units to easily search for pre-existing reporting satisfying constraints to prevent duplication"
 
     },
 
@@ -164,7 +164,7 @@ export const projects = [
         (with Mayank Jain)
         <br/>
         <br/>
-        On one hand, Graph neural networks (GNNs),an emerging deep learning model class that can extract meaningful representations from highly expressive graph-structured data are gaining popularity for a wide ranges of applications. On the other hand, as neural net architectures get deeper and deeper, the cost running modern ML algorithms efficiently is getting higher and higher. In this work, we explore techniques to make running GNNs, specifically GCNs, on everyday CPUs more feasible. Using the Wiki-CS dataset, we both analyze past approaches to optimize this class of algorithms and also suggest novel methods to optimize on the the specific structure and purpose of GCNs. We compare these approaches on several key factors including speed, cache performance and accuracy on the results.
+        On one hand, Graph neural networks (GNNs), an emerging deep learning model class that can extract meaningful representations from highly expressive graph-structured data are gaining popularity for a wide ranges of applications. On the other hand, as neural net architectures get deeper and deeper, the cost running modern ML algorithms efficiently is getting higher and higher. In this work, we explore techniques to make running GNNs, specifically GCNs, on everyday CPUs more feasible. Using the Wiki-CS dataset, we both analyze past approaches to optimize this class of algorithms and also suggest novel methods to optimize on the the specific structure and purpose of GCNs. We compare these approaches on several key factors including speed, cache performance and accuracy on the results.
         </>
     },
 
@@ -185,7 +185,7 @@ export const projects = [
         (with Kusha Maharshi)
         <br/>
         <br/>
-        Implemented an image processing toolbox for several image segmentation algorithms including Otsu Binarization, Edge Detection, and K-Means. The sequential versions of the algorithms were implemented using C++, and the parallel versions were implemented in both OpenMP and CUDA. The goal of this project was to implement and analyze the scalability, scope, and benefit of performing image segmentation in parallel
+        An image processing toolbox for several image segmentation algorithms including Otsu Binarization, Edge Detection, and K-Means. The sequential versions of the algorithms are implemented using C++, and the parallel versions are implemented in both OpenMP and CUDA. The goal of this project was to implement and analyze the scalability, scope, and benefit of performing image segmentation in parallel
         </>
     },
 
