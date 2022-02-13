@@ -6,9 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Experiences(props) {
 
-    const total_num = props.isClicked.filter(Boolean).length 
+    const total_num = props.isClicked.filter(Boolean).length
     const filtered = props.list.filter(function (val) {
-        if(total_num==0) return true;
+        if (total_num == 0) return true;
         var tags = Object.keys(val.tags);
         for (var i = 0; i < tags.length; i++) {
             if (props.isClicked[props.icons[tags[i]]]) return true
@@ -19,53 +19,53 @@ export default function Experiences(props) {
         var tags = Object.keys(data.tags);
         return (
 
-            <Card className="mb-3 mt-3 p-2" style={{ borderRadius: "15px", width: '100%',  }} >
-                <Card.Header style={{ width: '100%', borderRadius: "15px",  whiteSpace: 'pre-wrap', overflowWrap: 'break-word', textAlign: "left"}}>
-                    
-                
-                    <Accordion.Toggle style={{ borderRadius: "15px", width: '100%', "color": "#6512b2",  whiteSpace: 'pre-wrap', overflowWrap: 'break-word',textAlign: "left" }} as={Button}
+            <Card className="mb-3 mt-3 p-2" style={{ borderRadius: "15px", width: '100%', }} >
+                <Card.Header style={{ width: '100%', borderRadius: "15px", whiteSpace: 'pre-wrap', overflowWrap: 'break-word', textAlign: "left" }}>
+
+
+                    <Accordion.Toggle style={{ borderRadius: "15px", width: '100%', "color": "#6512b2", whiteSpace: 'pre-wrap', overflowWrap: 'break-word', textAlign: "left" }} as={Button}
                         variant="link" eventKey={key + 1}>
-                        <div class="float-left" style={{ textAlign: "left", whiteSpace: 'pre-wrap', overflowWrap: 'break-word',}}>
-                            <Card.Title style={{ borderRadius: "15px", whiteSpace: 'pre-wrap', overflowWrap: 'break-word', textAlign: "left"}} >
-                                
-                                <div class="float-left" style={{ borderRadius: "15px", whiteSpace: 'pre-wrap', overflowWrap: 'break-word', textAlign: "left"}}>{data.name}</div>
-                                
+                        <div class="float-left" style={{ textAlign: "left", whiteSpace: 'pre-wrap', overflowWrap: 'break-word', }}>
+                            <Card.Title style={{ borderRadius: "15px", whiteSpace: 'pre-wrap', overflowWrap: 'break-word', textAlign: "left" }} >
+
+                                <div class="float-left" style={{ borderRadius: "15px", whiteSpace: 'pre-wrap', overflowWrap: 'break-word', textAlign: "left" }}>{data.name}</div>
+
                             </Card.Title>
                             <br />
-                            {data.position && 
-                            (
-                            <div  style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word',}}>
-                                 
-                                    <div  style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word',}}>
-                                        {data.position},  {data.org} <br />
+                            {data.position &&
+                                (
+                                    <div style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word', }}>
 
+                                        <div style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word', }}>
+                                            {data.position},  {data.org} <br />
+
+                                        </div>
+                                        <br />
                                     </div>
-                                    <br/>
-                            </div>
-                            )}
-                        
+                                )}
+
                             {
 
                                 tags.map(function (tag) {
-                                    if(props.isClicked[props.icons[tag]]){
-                                    return <Badge className="mr-1" variant="dark" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word', background: '#f8d776', color: 'black' }}>{tag} </Badge>
+                                    if (props.isClicked[props.icons[tag]]) {
+                                        return <Badge className="mr-1" variant="dark" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word', background: '#f8d776', color: 'black' }}>{tag} </Badge>
                                     }
-                                    else{
+                                    else {
                                         return <Badge className="mr-1" variant="dark" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word', background: 'rgb(211, 211, 211)', color: 'black' }}>{tag} </Badge>
 
                                     }
                                 })
                             }
                             <br />
-                            </div>
-                            
+                        </div>
 
-                        
+
+
                         <div class="float-right">
-                                {data.year}
-                            </div>
+                            {data.year}
+                        </div>
                     </Accordion.Toggle>
-                    
+
                 </Card.Header>
                 <Accordion.Collapse eventKey={key + 1}>
                     <Card.Body >
@@ -81,24 +81,24 @@ export default function Experiences(props) {
 
 
                             {data.paper &&
-                                
-                                    <Button style={{ color: "#6512b2", "margin-top": "10px" , "margin-bottom": "10px", "margin-right": "10px",}} variant="outline"> <a href={data.paper} style={{ color: "#6512b2" }} >Paper</a></Button>
-                                }
-                            {data.report &&
-                                
-                                <Button style={{ color: "#6512b2", "margin-top": "10px" , "margin-bottom": "10px", "margin-right": "10px",}} variant="outline"> <a href={data.report} style={{ color: "#6512b2" }} >Report</a></Button>
+
+                                <Button style={{ color: "#6512b2", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"> <a href={data.paper} style={{ color: "#6512b2" }} >Paper</a></Button>
                             }
-                            {data.poster && 
-                                <Button style={{ color: "#6512b2", "margin-top": "10px" , "margin-bottom": "10px", "margin-right": "10px",}} variant="outline"><a href={data.poster} style={{ color: "#6512b2" }}>Poster</a> </Button>
+                            {data.report &&
+
+                                <Button style={{ color: "#6512b2", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"> <a href={data.report} style={{ color: "#6512b2" }} >Report</a></Button>
+                            }
+                            {data.poster &&
+                                <Button style={{ color: "#6512b2", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"><a href={data.poster} style={{ color: "#6512b2" }}>Poster</a> </Button>
                             }
                             {data.video &&
-                                    <Button style={{ color: "#6512b2", "margin-top": "10px" , "margin-bottom": "10px", "margin-right": "10px",}} variant="outline"> <a href={data.video} style={{ color: "#6512b2" }}>Video</a> </Button>
-                                }
-                            {data.code && 
-                                <Button style={{ color: "#6512b2", "margin-top": "10px" , "margin-bottom": "10px", "margin-right": "10px",}} variant="outline"> <a href={data.code} style={{ color: "#6512b2" }}>Code</a> </Button>
+                                <Button style={{ color: "#6512b2", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"> <a href={data.video} style={{ color: "#6512b2" }}>Video</a> </Button>
                             }
-                            {data.website && 
-                                <Button style={{ color: "#6512b2", "margin-top": "10px" , "margin-bottom": "10px", "margin-right": "10px",}} variant="outline"><a href={data.website} style={{ color: "#6512b2" }}>Website</a> </Button>
+                            {data.code &&
+                                <Button style={{ color: "#6512b2", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"> <a href={data.code} style={{ color: "#6512b2" }}>Code</a> </Button>
+                            }
+                            {data.website &&
+                                <Button style={{ color: "#6512b2", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"><a href={data.website} style={{ color: "#6512b2" }}>Website</a> </Button>
                             }
 
                         </div>
@@ -139,10 +139,10 @@ export default function Experiences(props) {
                             {
 
                                 tags.map(function (tag) {
-                                    if(props.isClicked[props.icons[tag]]){
-                                    return <Badge className="mr-1" variant="dark" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word', background: '#f8d776', color: 'black' }}>{tag} </Badge>
+                                    if (props.isClicked[props.icons[tag]]) {
+                                        return <Badge className="mr-1" variant="dark" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word', background: '#f8d776', color: 'black' }}>{tag} </Badge>
                                     }
-                                    else{
+                                    else {
                                         return <Badge className="mr-1" variant="dark" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word', background: 'rgb(211, 211, 211)', color: 'black' }}>{tag} </Badge>
 
                                     }
@@ -162,25 +162,28 @@ export default function Experiences(props) {
 
 
                         <div class="float-left text-secondary" style={{ "text-align": "left" }}>
-                            {data.desc}
+                            {data.desc} 
                         </div>
                         <br />
                         <div class="float-left">
 
-
+                            
 
                             {data.paper &&
-                                
-                                    <Button style={{ color: "#6512b2", "margin-top": "10px" , "margin-bottom": "10px", "margin-right": "10px",}} variant="outline"> <a href={data.paper} style={{ color: "#6512b2" }} >Paper</a></Button>
-                                }
-                            {data.video &&
-                                    <Button style={{ color: "#6512b2", "margin-top": "10px" , "margin-bottom": "10px", "margin-right": "10px",}} variant="outline"> <a href={data.video} style={{ color: "#6512b2" }}>Video</a> </Button>
-                                }
-                            {data.code && 
-                                <Button style={{ color: "#6512b2", "margin-top": "10px" , "margin-bottom": "10px", "margin-right": "10px",}} variant="outline"> <a href={data.code} style={{ color: "#6512b2" }}>Code</a> </Button>
+
+                                <Button style={{ color: "#6512b2", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"> <a href={data.paper} style={{ color: "#6512b2" }} >Paper</a></Button>
                             }
-                            {data.website && 
-                                <Button style={{ color: "#6512b2", "margin-top": "10px" , "margin-bottom": "10px", "margin-right": "10px",}} variant="outline"><a href={data.website} style={{ color: "#6512b2" }}>Website</a> </Button>
+                            {data.video &&
+                                <Button style={{ color: "#6512b2", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"> <a href={data.video} style={{ color: "#6512b2" }}>Video</a> </Button>
+                            }
+                            {data.code &&
+                                <Button style={{ color: "#6512b2", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"> <a href={data.code} style={{ color: "#6512b2" }}>Code</a> </Button>
+                            }
+                            {data.website &&
+                                <Button style={{ color: "#6512b2", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"><a href={data.website} style={{ color: "#6512b2" }}>Website</a> </Button>
+                            }
+                            {data.article &&
+                                <Button style={{ color: "#6512b2", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"><a href={data.article} style={{ color: "#6512b2" }}>Article</a> </Button>
                             }
 
                         </div>
@@ -194,20 +197,20 @@ export default function Experiences(props) {
 
         <>
 
-            
+
             <center>
                 <div className="justify-content-center" style={{ width: '100%' }} >
                     {filtered.length > 0 &&
-                   
+
                         <div class="float-left" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word', textAlign: "left" }}>
-                            <br/>
+                            <br />
                             <h4 className="arrow" style={{ color: 'grey' }}>{props.name}</h4>
-                            <br/>
-                            
+                            <br />
+
                         </div>
 
                     }
-                    
+
                     <center>
                         <Accordion className="justify-content-centerm-2">
                             {

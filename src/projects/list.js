@@ -62,6 +62,7 @@ export const positions = [
         "poster": "https://drive.google.com/file/d/1BE8EV07vt-nwMyFeo2lV4h04sxqgZ3Ml/view?usp=sharing",
         "paper": "https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/icml2021/12/paper.pdf",
         "video": "https://www.climatechange.ai/papers/icml2021/12",
+        "article": "https://www.cs.cmu.edu/news/2021/cmu-team-uses-machine-learning-predict-peatland-fires",
         "desc": 
         <>
         (with Sydney Zheng, Blair Chen, Anirudh Chowdhury, Yue Wu, Akshina Gupta, Justin Khim , Reid Simmons)

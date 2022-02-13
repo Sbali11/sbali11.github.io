@@ -138,7 +138,7 @@ export default function Home() {
                 {/* Headline */}
                 <div className="row">
                     <div className="col-md-12 ">
-                        <h1 className="arrow"><span>$</span>ps aux </h1>
+                        <h1 className="arrow"><span>$</span>ps ux </h1>
 
                         I spend my time on these things
                         <br />
