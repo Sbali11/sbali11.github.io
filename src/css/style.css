@@ -451,7 +451,7 @@ table {
 
 /* ==========================================================================parallax========================================================================== */
 .parallax {
-	background: url('../img/header-bg.jpg') no-repeat center top fixed; 
+	background: url('../img/header-bg.jpg') no-repeat center top; 
 	width: 100vw;
 	min-height: 100vh;
 	

@@ -13,14 +13,37 @@ function App() {
   return (
 
     <div className="App">
-      <Navbar variant="dark" style={{ backgroundColor: 'black', textAlign: "left"}}>
-      <left>
-        <a style={{"color": "white"}} href="https://drive.google.com/file/d/17erqxSjix1Bt_uOXgYmGwpkZWgg_60qa/view?usp=sharing" download>
-          Resume
+ <center>
+   <div style={{  backgroundColor: 'black' }}>
+   <div >
+      <Navbar variant="dark" style={{   textAlign: "left" }}>
+      <center>
+       
+          {/* Headline */}
+          
+            <div >
 
-        </a>
-      </left>
+              <div style={{ textAlign: "left" }}>
+                <a style={{ "color": "white" }} href="https://drive.google.com/file/d/17erqxSjix1Bt_uOXgYmGwpkZWgg_60qa/view?usp=sharing" download>
+                  Resume
+
+                </a>
+              </div>
+            </div>
+            
+          
+
+        
+        
+        
+        </center>
+        
+
       </Navbar>
+      </div>
+      </div>
+      </center>
+
       {/* Website Title */}
       <title>Shreya Bali</title>
       {/* Bootstrap */}
