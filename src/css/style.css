@@ -20,23 +20,6 @@
 /* ==========================================================================
 	Global Styles
 ========================================================================== */
-a {
-	color: #787676;
-	-webkit-transition:all 0.5s;
-	-moz-transition:all 0.5s;
-	-o-transition:all 0.5s;
-	transition:all 0.5s;
-	border-bottom: 1px dashed;
-	outline:none!important;
-}
-a:hover,a:focus,a:active {
-	color: #6512b2; /* Your purple color */
-	text-decoration:none;
-	outline:none!important;
-}
-a {
-    color: #6512b2; /* Your purple color */
-}
 p {
 	color:#8c9398;
 	font-size:15px;
@@ -93,10 +76,7 @@ html {
 	-webkit-text-size-adjust:100%;
 	-ms-text-size-adjust:100%;
 }
-html,html a {
-	-webkit-font-smoothing:antialiased;
-	text-shadow:1px 1px 1px rgba(0,0,0,0.004);
-}
+
 html,button,input,select,textarea {
 	font-family:'Varela Round',sans-serif;
 }
