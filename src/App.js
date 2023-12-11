@@ -24,7 +24,7 @@ function App() {
             <div >
 
               <div style={{ textAlign: "left" }}>
-                <a style={{ "color": "white" }} href="https://drive.google.com/file/d/17erqxSjix1Bt_uOXgYmGwpkZWgg_60qa/view?usp=sharing" download>
+                <a style={{ "color": "white" }} href="https://drive.google.com/file/d/1Wg8ygJHhdMA65T80lhY8GaQ2FBPN6-r1/view?usp=sharing" download>
                   Resume
 
                 </a>

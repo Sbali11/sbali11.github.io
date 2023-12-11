@@ -1,175 +1,202 @@
-import { positions, projects, extracurricular, current_work } from "./projects/list.js";
 import { useState } from "react";
-import { Badge, Button, Card } from "react-bootstrap";
-import Experiences from "./Component.js"
-import { Parallax } from 'react-parallax';
+import { Button, Col, Container, Row } from "react-bootstrap";
+import Experiences from "./Component.js";
+import { Parallax } from "react-parallax";
+import img from "./img/profile.jpg";
+import bg from "./img/bg-img.jpg";
+import { positions, projects, extracurricular, research } from "./projects/list.js";
+
 export default function Home() {
-
     const icons = {
-        "Machine Learning": 0,
-        "Human Computer Interaction": 1,
-        "Parallel/Distributed Systems": 2,
-        "Research": 3,
-        "Education/mentoring": 4,
-        "Socially Relevant Work": 5,
-        "Opinionat-ing/Talks": 6,
+        "Human Computer Interaction": 0,
+        "Machine Learning": 1,
+        "Education/mentoring": 3,
+        "Socially Relevant Work": 4,
+        "Opinionat-ing/Talks": 5,
+    };
 
-
-    }
-    const [isClicked, setIsClicked] = useState([false, false, false, false, false, false, false]);
-    const [allTags, setAllTags] = useState(["Machine Learning", "Human Computer Interaction", "Parallel/Distributed Systems", "Research", "Education/mentoring", "Socially Relevant Work", "Opinionat-ing/Talks"]);
+    const [isClicked, setIsClicked] = useState([false, false, false, false, false, false]);
+    const [allTags, setAllTags] = useState([
+        "Human Computer Interaction",
+        "Machine Learning",
+        "Education/mentoring",
+        "Socially Relevant Work",
+        "Opinionat-ing/Talks",
+    ]);
 
     const [count, setCount] = useState([0, 0, 0, 0, 0]);
     const [interested, setInterested] = useState(new Set());
+
     function toggleElem(item_key, name) {
-
         var x = document.getElementById(name);
-        if (x.style.background === 'rgb(211, 211, 211)') {
-            x.style.background = '#f8d776';
-
+        if (x.style.background === "rgb(211, 211, 211)") {
+            x.style.background = "#f8d776";
         } else {
-            x.style.background = 'rgb(211, 211, 211)';
-
+            x.style.background = "rgb(211, 211, 211)";
         }
+
         const newList = isClicked.map((data, key) => {
-            if (key == item_key) return !isClicked[key];
-            else return isClicked[key]
-        })
+            if (key === item_key) return !isClicked[key];
+            else return isClicked[key];
+        });
 
         const newCount = count.map((data, key) => {
-            if (key == item_key && !isClicked[key]) return count[key] + 1;
-            else return count[key]
-        })
-
+            if (key === item_key && !isClicked[key]) return count[key] + 1;
+            else return count[key];
+        });
 
         setIsClicked(newList);
-        setCount(newCount)
-
-
-
+        setCount(newCount);
     }
-    return (<>
 
-        {/* ****************************** Preloader ************************** */}
-        <div />
-        {/* ==========================
-  HEADER SECTION 
-  =========================== */}
-        <header id="home">
-            {/* creative menu */}
-            <div className="container-fluid">
-                {/*/row*/}
-            </div>
-            {/*/container*/}
-            {/* Header Image */}
-            <section >
-                <div className="parallax">
-                    {/* Slider Button (don't edit!)*/}
+    return (
+        <>
+            <header id="home" className="header">
+                {/* Your header content */}
+            </header>
 
-                    {/* HEADER HEADLINE */}
+            <section
+                className="intro text-center section-padding color-bg"
+                id="about"
+                style={{
+                    backgroundImage: `url(${bg})`,
+                    backgroundSize: "cover",
+                }}
+            >
+                <Container>
+                    <h1 style={{ "font-size": "50px" }}>
+                        Shreya Bali
+                    </h1>
+                    <div className="align-self-center">
 
-                    <div className="d-flex justify-content-center">
+                        <Button
+                            style={{ background: "#6512b2" }}
+                            className="btn btn-social-icon btn-github m-1"
+                            href="https://github.com/Sbali11"
+                        >
+                            <i className="fa fa-github" />
+                        </Button>
+                        <Button
+                            style={{ background: "#6512b2" }}
+                            className="btn btn-social-icon btn-twitter m-1"
+                            href="https://twitter.com/ShreyaBali3"
+                        >
+                            <i className="fa fa-twitter" />
+                        </Button>
+                        <Button
+                            style={{ background: "#6512b2" }}
+                            className="btn btn-social-icon btn-linkedin m-1"
+                            href="https://linkedin.com/in/shreya-bali-089478107"
+                        >
+                            <i className="fa fa-linkedin" />
+                        </Button>
+                        <br />
+                        <br />
+                        <br />
+                        <Container>
 
-                        <div className="align-self-center">
-                            <h1 className="animated fadeInDown">
-                                <span style={{ color: '#6512b2' }}>S</span>hreya<br />Bali
-                            </h1>
-                            <Button style={{ background: '#6512b2' }} className="btn btn-social-icon btn-github m-1" href='https://github.com/Sbali11'><i className="fa fa-github" /></Button>
-                            <Button style={{ background: '#6512b2' }} className="btn btn-social-icon btn-twitter m-1" href='https://twitter.com/ShreyaBali3'><i className="fa fa-twitter" /></Button>
-                            <Button style={{ background: '#6512b2' }} className="btn btn-social-icon btn-linkedin m-1" href='https://linkedin.com/in/shreya-bali-089478107'><i className="fa fa-linkedin" /></Button>
-                        </div>
+                            <br />
+                            <br />
+                        </Container>
+
+
                     </div>
+                    <h1 className="arrow" style={{ color: "gray" }}>
+                        <span>$</span>whoami
+                    </h1>
+                    <Row>
+                        <Col md={6}>
 
-                </div>
+                            <section>
+                                <div
+                                    className="float-left"
+                                    style={{ textAlign: "left", color: "black" }}
+                                >
+                                    Hello! I'm currently a Software Engineer at{" "}
+                                    <a href="https://www.databricks.com/">Databricks</a>. I completed my
+                                    undergrad and masters from{" "}
+                                    <a href="https://www.cs.cmu.edu/">Carnegie Mellon School of Computer
+                                        Science</a>. During my time at CMU, I had the opportunity to work on a
+                                    combination of HCI and ML problems at the{" "}
+                                    <a href="https://www.cs.cmu.edu/~eheartlab/">Expertise@Scale Lab</a>, the{" "}
+                                    <a href="https://www.cs.cmu.edu/~eheartlab/">eHeartlab</a> and the{" "}
+                                    <a href="http://multicomp.cs.cmu.edu/people/previous-members/">MultiComp
+                                        Lab</a>.
+                                    <br />
+                                    <br />
+                                    I enjoy thinking about different ways computer science can be used to make
+                                    life better. If you're interested in any of my work or just want to reach
+                                    out, feel free to drop me an email at shreyabali.cs[at]gmail.com !
+                                    <br />
+                                    <br />
+                                    <div
+                                        className="float-left text-secondary"
+                                        style={{ color: "white" }}
+                                    >
+                                        I <strong>strongly</strong> believe everything is better with music
+                                        playing in the background, so here's a periodically updated list of songs
+                                        I'm currently listening to for you to play while scrolling through my
+                                        website!
+                                        <br />
+                                        <br />
+                                        <div className="mt-auto p-2 bd-highlight">
+                                            <iframe
+                                                src="https://open.spotify.com/embed/playlist/66phfa44ZZyEQw5JDvyDGe"
+                                                width={500}
+                                                height={200}
+                                                frameBorder={0}
+                                                allowTransparency="true"
+                                                allow="encrypted-media"
+                                            />
+                                        </div>
 
+                                    </div>
+                                    P.S Cartoon and Background image created by{" "}
+                                    <a href="https://openai.com/research/dall-e">Dall-E</a>
+                                </div>
+
+                            </section>
+                        </Col>
+                        <Col md={6} className="d-flex justify-content-center align-items-center">
+                            <img
+                                src={img}
+                                alt="Profile"
+                                style={{
+                                    maxWidth: '80%',
+                                    borderRadius: '30px',
+                                    height: 'auto'
+                                }}
+                            />
+                        </Col>
+                    </Row>
+
+                </Container>
 
             </section>
-            {/* Header Image End */}
-        </header>
-        {/* ==========================
-  HEADER SECTION END  
-  =========================== */}
-        {/* ==========================
-  ABOUT SECTION  
-  =========================== */}
-        <section className="intro text-center section-padding color-bg" id="about">
 
-            <div className="container">
-                {/* WELCOME TEXT */}
-                <div className="row">
-                    <center>
-                        <div className="col-md-12 ">
-                            <h1 className="arrow"><span>$</span>whoami</h1>{/* Headline */}
-                            {/* about / welcome text */}
-                            <div class="float-left " style={{ "text-align": "left", color: "white" }}>
-                               
-                                    Hello! I'm currently a Fifth Year Master's Student at Carnegie Mellon School of Computer Science with a keen interest in Machine
-                                    Learning and Human Computer Interaction. I enjoy thinking about different ways in which
-                                    computer science can be used to make life better. If you're interested in any of my work or just want to reach out, feel free to drop me an email at sbali[at]andrew.cmu.edu !
-                                
-                                <br />
-                                <br />
-
-
+            <section className="features text-center section-padding" id="service">
+                <Container>
+                    <div className="container">
+                        <Col md={12}>
+                            <h1 className="arrow">
+                                <span>$</span>history
+                            </h1>
+                            I've spent my time on these things
+                            <br />
+                            <br />
+                            <div style={{ textAlign: "left" }}>
+                                <Experiences name="Research Experience" list={research} isClicked={isClicked} icons={icons} />
+                                <Experiences name="Industry Experience" list={positions} isClicked={isClicked} icons={icons} />
+                                <Experiences name="Selected Projects/Technical Reports" list={projects} isClicked={isClicked} icons={icons} />
+                                <Experiences name="When I'm (~somewhat~) away from my laptop" list={extracurricular} isClicked={isClicked} icons={icons} />
                             </div>
-                            <div class="float-left text-secondary" style={{ "text-align": "left", color: "white" }}>
-
-                                P.S. I *strongly* believe everything is better with music playing in the background, so here's a periodically updated list of songs I'm currently listening to for you to play while scrolling through my website!
-
-                                <br />
-                                <br />
-                            </div>
-                           
-                            <div class="mt-auto p-2 bd-highlight">
-                                <iframe src="https://open.spotify.com/embed/playlist/66phfa44ZZyEQw5JDvyDGe" width={300} height={200} frameBorder={0} allowTransparency="true" allow="encrypted-media" />
-                            </div>
-                        </div>
-                    </center>
-                </div>
-            </div>
-        </section>
-
-        {/* ==========================
-  SERVICE SECTION 
-  =========================== */}
-
-        <section className="features text-center section-padding" id="service">
-            <div className="container">
-                {/* Headline */}
-                <div className="row">
-                    <div className="col-md-12 ">
-                        <h1 className="arrow"><span>$</span>ps ux </h1>
-
-                        I spend my time on these things
-                        <br />
-                        <br />
-                        {
-
-                            allTags.map(function (tag, idx) {
-                                return (
-
-                                    <Badge className="m-2 p-2" id={tag} variant="dark" onClick={() => toggleElem(idx, tag)} style={{ cursor: "pointer", background: 'rgb(211, 211, 211)', color: 'black' }}> {tag} </Badge>
-
-
-                                )
-                            })
-                        }
-
-                        <div style={{ textAlign: "left" }}>
-                            <Experiences name="Ongoing Work" list={current_work} isClicked={isClicked} icons={icons} />
-                            <Experiences name="Past Work" list={positions} isClicked={isClicked} icons={icons} />
-                            <Experiences name="Selected Projects/Technical Reports" list={projects} isClicked={isClicked} icons={icons} />
-                            <Experiences name="When I'm (~somewhat~) away from my laptop" list={extracurricular} isClicked={isClicked} icons={icons} />
-                        </div>
+                        </Col>
                     </div>
-                </div>
-
-            </div>
-        </section>
-        {/* ==========================
-  BLOG SECTION 
-  =========================== */}
-
-    </>);
-
+                </Container>
+            </section>
+            {/* ==========================
+        BLOG SECTION
+        =========================== */}
+        </>
+    );
 }
