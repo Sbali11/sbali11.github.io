@@ -133,16 +133,16 @@ export default function Home() {
                         <Tab.Container id="experience-tabs" defaultActiveKey="research">
                             <Nav variant="tabs" className="justify-content-center">
                                 <Nav.Item>
-                                    <Nav.Link eventKey="research">Research Experience</Nav.Link>
+                                    <Nav.Link eventKey="research" style={{ color: '#575395' }}><b>Research Experience</b></Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="industry">Industry Experience</Nav.Link>
+                                    <Nav.Link eventKey="industry" style={{ color: '#575395' }}><b>Industry Experience</b></Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="projects">Selected Projects/Technical Reports</Nav.Link>
+                                    <Nav.Link eventKey="projects" style={{ color: '#575395' }}><b>Selected Projects/Technical Reports</b></Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="extracurricular">Extracurricular Activities</Nav.Link>
+                                    <Nav.Link eventKey="extracurricular" style={{ color: '#575395' }}><b>Extracurricular Activities</b></Nav.Link>
                                 </Nav.Item>
                             </Nav>
 
@@ -161,6 +161,7 @@ export default function Home() {
                                 </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
+
 
                     </Col>
                 </Container>
