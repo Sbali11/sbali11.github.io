@@ -176,9 +176,8 @@ export default function Experiences(props) {
 
             <div class="float-left" style={{ whiteSpace: 'pre-wrap', overflowWrap: 'break-word', textAlign: "left" }}>
               <br />
-              <h4 className="arrow" style={{ color: 'grey' }}>{props.name}</h4>
               <br />
-
+              <br />
             </div>
 
           }

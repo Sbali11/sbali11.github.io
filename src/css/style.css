@@ -30,9 +30,12 @@ a {
 	outline:none!important;
 }
 a:hover,a:focus,a:active {
-	color:#0D0D0D;
+	color: #6512b2; /* Your purple color */
 	text-decoration:none;
 	outline:none!important;
+}
+a {
+    color: #6512b2; /* Your purple color */
 }
 p {
 	color:#8c9398;
@@ -1415,4 +1418,15 @@ ul.slides li {
 .btn-instagram:focus {
 	background: #bf3322;
 	color: #ffffff
+}
+
+/* react.css */
+a {
+    color: #6A0DAD; /* Replace with the exact purple color you want */
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+a:hover {
+    color: #593E8A; /* Optional: slightly different color on hover, replace with your choice */
+    text-decoration: underline; /* Optional: underline on hover */
 }

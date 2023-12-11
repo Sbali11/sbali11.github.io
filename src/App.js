@@ -8,6 +8,8 @@ import "./assets/textrotator/simpletextrotator.css";
 import "./assets/flexslider/flexslider.css";
 import "./css/style.css";
 import "./css/animate.css";
+import "./css/react.css"
+
 import Navbar from 'react-bootstrap/Navbar';
 function App() {
   return (
