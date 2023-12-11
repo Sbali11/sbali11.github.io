@@ -27,7 +27,7 @@ export default function Experiences(props) {
               </Card.Title>
               {data.org && (
                 <div style={{ color: 'gray', fontSize: "14px", marginTop: "5px" }}>
-                  
+
                   {data.position ? <>{data.position}, {data.org} </> : <>{data.org}</>}
                 </div>
               )}
@@ -46,17 +46,12 @@ export default function Experiences(props) {
               {data.code && <a href={data.code} style={{ marginRight: "10px", color: "#6512b2" }}>Code</a>}
               {data.website && <a href={data.website} style={{ marginRight: "10px", color: "#6512b2" }}>Website</a>}
               {data.article && <a href={data.article} style={{ marginRight: "10px", color: "#6512b2" }}>News Article</a>}
+            </div>
 
-            </div>
-            <div style={{ fontSize: "14px", display: 'flex', flexWrap: 'wrap' }}>
-              {tags.map((tag, index) => (
-                props.isClicked[props.icons[tag]] ?
-                  <Badge key={index} className="mr-1 mb-1" variant="dark" style={{ background: '#f8d776', color: 'gray' }}>{tag}</Badge> :
-                  <Badge key={index} className="mr-1 mb-1" variant="light" style={{ background: 'rgb(239, 239, 239)', color: 'gray', border: '1px solid #ddd' }}>{tag}</Badge>
-              ))}
-            </div>
           </div>
+
           <div style={{ textAlign: 'right' }}>
+
             <Accordion.Toggle as={Button} eventKey={key + 1} style={{ fontSize: "14px", background: 'none', border: 'none', padding: 0, color: 'grey' }}>
               <i className="fas fa-chevron-down"></i>  </Accordion.Toggle>
           </div>
