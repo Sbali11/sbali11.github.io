@@ -38,14 +38,14 @@ export default function Experiences(props) {
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between', borderTop: "1px solid #ddd", paddingTop: "10px" }}>
             <div style={{ fontSize: "14px" }}>
-              {data.thesis && <a href={data.thesis} style={{ marginRight: "10px", color: "#6512b2" }}>MS Thesis</a>}
-              {data.paper && <a href={data.paper} style={{ marginRight: "10px", color: "#6512b2" }}>Paper</a>}
-              {data.report && <a href={data.report} style={{ marginRight: "10px", color: "#6512b2" }}>Report</a>}
-              {data.poster && <a href={data.poster} style={{ marginRight: "10px", color: "#6512b2" }}>Poster</a>}
-              {data.video && <a href={data.video} style={{ marginRight: "10px", color: "#6512b2" }}>Video</a>}
-              {data.code && <a href={data.code} style={{ marginRight: "10px", color: "#6512b2" }}>Code</a>}
-              {data.website && <a href={data.website} style={{ marginRight: "10px", color: "#6512b2" }}>Website</a>}
-              {data.article && <a href={data.article} style={{ marginRight: "10px", color: "#6512b2" }}>News Article</a>}
+              {data.thesis && <a href={data.thesis} style={{ marginRight: "10px", color: "#575395" }}>MS Thesis</a>}
+              {data.paper && <a href={data.paper} style={{ marginRight: "10px", color: "#575395" }}>Paper</a>}
+              {data.report && <a href={data.report} style={{ marginRight: "10px", color: "#575395" }}>Report</a>}
+              {data.poster && <a href={data.poster} style={{ marginRight: "10px", color: "#575395" }}>Poster</a>}
+              {data.video && <a href={data.video} style={{ marginRight: "10px", color: "#575395" }}>Video</a>}
+              {data.code && <a href={data.code} style={{ marginRight: "10px", color: "#575395" }}>Code</a>}
+              {data.website && <a href={data.website} style={{ marginRight: "10px", color: "#575395" }}>Website</a>}
+              {data.article && <a href={data.article} style={{ marginRight: "10px", color: "#575395" }}>News Article</a>}
             </div>
 
           </div>
@@ -82,7 +82,7 @@ export default function Experiences(props) {
 
       <Card className="m-2" style={{ width: '100%' }}>
         <Card.Header>
-          <Accordion.Toggle style={{ width: '100%', "color": "#6512b2" }} as={Button}
+          <Accordion.Toggle style={{ width: '100%', "color": "#575395" }} as={Button}
             variant="link" eventKey={key + 1}>
             <div class="float-left">
               <Card.Title >
@@ -138,19 +138,19 @@ export default function Experiences(props) {
 
               {data.paper &&
 
-                <Button style={{ color: "#6512b2", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"> <a href={data.paper} style={{ color: "#6512b2" }} >Paper</a></Button>
+                <Button style={{ color: "#575395", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"> <a href={data.paper} style={{ color: "#575395" }} >Paper</a></Button>
               }
               {data.video &&
-                <Button style={{ color: "#6512b2", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"> <a href={data.video} style={{ color: "#6512b2" }}>Video</a> </Button>
+                <Button style={{ color: "#575395", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"> <a href={data.video} style={{ color: "#575395" }}>Video</a> </Button>
               }
               {data.code &&
-                <Button style={{ color: "#6512b2", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"> <a href={data.code} style={{ color: "#6512b2" }}>Code</a> </Button>
+                <Button style={{ color: "#575395", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"> <a href={data.code} style={{ color: "#575395" }}>Code</a> </Button>
               }
               {data.website &&
-                <Button style={{ color: "#6512b2", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"><a href={data.website} style={{ color: "#6512b2" }}>Website</a> </Button>
+                <Button style={{ color: "#575395", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"><a href={data.website} style={{ color: "#575395" }}>Website</a> </Button>
               }
               {data.article &&
-                <Button style={{ color: "#6512b2", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"><a href={data.article} style={{ color: "#6512b2" }}>Article</a> </Button>
+                <Button style={{ color: "#575395", "margin-top": "10px", "margin-bottom": "10px", "margin-right": "10px", }} variant="outline"><a href={data.article} style={{ color: "#575395" }}>Article</a> </Button>
               }
 
             </div>

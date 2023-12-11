@@ -92,14 +92,16 @@ export default function Home() {
                                     <br />
                                     <br />
                                     <div className="mt-auto p-2 bd-highlight">
-                                        <iframe
-                                            src="https://open.spotify.com/embed/playlist/66phfa44ZZyEQw5JDvyDGe"
-                                            width={500}
-                                            height={200}
-                                            frameBorder={0}
-                                            allowTransparency="true"
-                                            allow="encrypted-media"
-                                        />
+                                        <left>
+                                            <iframe
+                                                src="https://open.spotify.com/embed/playlist/66phfa44ZZyEQw5JDvyDGe"
+                                                width="70%"
+                                                height={200}
+                                                frameBorder={0}
+                                                allowTransparency="true"
+                                                allow="encrypted-media"
+                                            />
+                                        </left>
                                     </div>
 
                                 </div>
@@ -122,13 +124,15 @@ export default function Home() {
                 </Container>
             </section >
 
-            <section className="features text-center section-padding" id="service">
-                <Container>
+            <section
+                className="intro text-center section-padding color-bg"
+                id="history"
+            >                <Container>
+                    <h1 className="arrow" style={{ color: "gray" }}>
+                        <span>$</span>history
+                    </h1>
                     <Col md={12}>
-                        <h1 className="arrow" style={{ color: "gray" }}>
-                            <span>$</span>history
-                        </h1>
-                        I have spent my time on these things
+
                         <br /><br />
                         <Tab.Container id="experience-tabs" defaultActiveKey="research">
                             <Nav variant="tabs" className="justify-content-center">
