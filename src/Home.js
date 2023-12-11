@@ -53,7 +53,11 @@ export default function Home() {
                         Shreya Bali
                     </h1>
                     <div className="align-self-center">
-                        {/* Social Media Buttons */}
+                        <Button style={{ background: '#575395' }} className="btn btn-social-icon btn-github m-1" href='https://scholar.google.com/citations?user=MkIlWQsAAAAJ&hl=en'><i className="fa fa-google" /></Button>
+                        <Button style={{ background: '#575395' }} className="btn btn-social-icon btn-github m-1" href='https://github.com/Sbali11'><i className="fa fa-github" /></Button>
+                        <Button style={{ background: '#575395' }} className="btn btn-social-icon btn-twitter m-1" href='https://twitter.com/ShreyaBali3'><i className="fa fa-twitter" /></Button>
+                        <Button style={{ background: '#575395' }} className="btn btn-social-icon btn-linkedin m-1" href='https://linkedin.com/in/shreya-bali-089478107'><i className="fa fa-linkedin" /></Button>
+                        <br /><br /><br />
                     </div>
                     <h1 className="arrow" style={{ color: "gray" }}>
                         <span>$</span>whoami
@@ -92,7 +96,7 @@ export default function Home() {
                                     <br />
                                     <br />
                                     <div className="mt-auto p-2 bd-highlight">
-                                        <left>
+                                        <center>
                                             <iframe
                                                 src="https://open.spotify.com/embed/playlist/66phfa44ZZyEQw5JDvyDGe"
                                                 width="70%"
@@ -101,12 +105,10 @@ export default function Home() {
                                                 allowTransparency="true"
                                                 allow="encrypted-media"
                                             />
-                                        </left>
+                                        </center>
                                     </div>
 
                                 </div>
-                                P.S Cartoon and Background image created by{" "}
-                                <a href="https://openai.com/research/dall-e">Dall-E</a>
                             </div>
                         </Col>
                         <Col md={6} className="d-flex justify-content-center align-items-center">
@@ -119,6 +121,16 @@ export default function Home() {
                                     height: 'auto'
                                 }}
                             />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col md={6}>
+                            <div>
+                                <left>
+                                    P.S Cartoon and Background image created by{" "}
+                                    <a href="https://openai.com/research/dall-e">Dall-E</a>
+                                </left>
+                            </div>
                         </Col>
                     </Row>
                 </Container>
