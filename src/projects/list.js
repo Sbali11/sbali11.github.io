@@ -185,7 +185,6 @@ export const projects = [
             "Parallel/Distributed Systems": [],
             "Machine Learning": ["machine learning"]
         },
-        "org": "self",
         "year": "2021",
         "report": "https://drive.google.com/file/d/15kp72M79kdsYAa8LL9pX2INKYcIWvinH/view?usp=sharing",
         "code": "https://github.com/mayankj/740_Proj",
@@ -205,7 +204,6 @@ export const projects = [
             "Parallel/Distributed Systems": [],
             "Machine Learning": ["machine learning"]
         },
-        "org": "self",
         "year": "2020",
         "report": "https://kmeshx.github.io/pdfs/418_CP__Copy_.pdf",
         "code": "https://github.com/kmeshx/Parallel-Image-Processing-Toolkit",
@@ -225,7 +223,6 @@ export const projects = [
         {
             "Machine Learning": ["machine learning"]
         },
-        "org": "self",
         "year": "2020",
         "code": "https://github.com/RiaPradeep/VideoSound-Matching",
         "report": "https://drive.google.com/file/d/1RqD-OX-V67RuaCUVTr0fUFEapBoCJcCI/view?usp=sharing",
