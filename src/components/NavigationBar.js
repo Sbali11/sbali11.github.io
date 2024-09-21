@@ -15,9 +15,8 @@ function NavigationBar() {
   };
 
   const navLinks = [
-    { text: 'Home', path: '/' },
+    { text: 'About', path: '/' },
     { text: 'Research', path: '/research' },
-    { text: 'Work Experience', path: '/industry' },
   ];
 
   return (
@@ -33,9 +32,7 @@ function NavigationBar() {
           <MenuIcon />
         </IconButton>
         <Typography component="div" sx={{ flexGrow: 1 }}>
-          <a href="https://drive.google.com/file/d/1g4r751tu2PvQMSuRgOB01DxVt45GYTFp/view?usp=sharing">
-            Resume
-          </a>
+
         </Typography>
         <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 2 }}> {/* Show buttons only on larger screens */}
           {navLinks.map((link) => (
@@ -43,9 +40,12 @@ function NavigationBar() {
               {link.text}
             </Button>
           ))}
+          <Button key={"CV"} color="inherit" component={Link} to={"https://drive.google.com/file/d/1g4r751tu2PvQMSuRgOB01DxVt45GYTFp/view?usp=sharing"} sx={{ textTransform: 'none' }}>
+              CV
+          </Button>
         </Box>
       </Toolbar>
-      
+
       {/* Drawer for smaller screens */}
       <Drawer anchor="left" open={isDrawerOpen} onClose={toggleDrawer(false)}>
         <List>
