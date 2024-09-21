@@ -69,10 +69,17 @@ export default function Home() {
                                 style={{ textAlign: "left", color: "black" }}
                             >
                                 Hello! I'm currently a First Yeah PhD Student at {" "}
-                                <a href="https://hcii.cmu.edu/">CMU HCII</a>, working with Prof. Mayank Goel at the intersection of ML, Social Computing and Sensing for Healthcare. I completed my
-                                undergrad and masters from{" "}
-                                <a href="https://www.cs.cmu.edu/">Carnegie Mellon School of Computer
-                                    Science</a>. During my time at CMU, I had the opportunity to work on a
+                                <a href="https://hcii.cmu.edu/">CMU HCII</a>, working with <a href="http://www.mayankgoel.com/">Prof. Mayank Goel</a> at the intersection of ML, Social Computing and Sensing for Healthcare. 
+                                
+                                <br />
+                                <br />
+
+                                Before this, I spent some time working as a Software Engineer at <a href="https://www.databricks.com/"> Databricks</a>
+                                I completed my undergrad and masters from{" "}
+                                <a href="https://www.cs.cmu.edu/">CMU School of Computer
+                                    Science</a>. 
+                                    
+                                During this time, I had the opportunity to work on a
                                 combination of HCI and ML problems at the{" "}
                                 <a href="https://www.cs.cmu.edu/~eheartlab/">Expertise@Scale Lab</a>, the{" "}
                                 <a href="https://www.cs.cmu.edu/~eheartlab/">eHeartlab</a> and the{" "}
