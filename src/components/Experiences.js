@@ -1,6 +1,7 @@
 // Experiences.js
 import React from 'react';
 import { Card, CardContent, Typography, Box, Button, Stack, Paper, Container } from '@mui/material';
+import { EmojiEvents } from '@mui/icons-material';
 import bg from '../img/bg-img.jpg'; // Adjust the path based on your project structure
 
 export default function Experiences({ title, list }) {
@@ -43,17 +44,28 @@ export default function Experiences({ title, list }) {
             }}
           >
             <CardContent>
+            {data.awards && (
+                <Stack direction="row" alignItems="center" sx={{ color: '#d4a017', mb: 2 }}>
+                  <EmojiEvents sx={{ mr: 1 }} />
+                  <Typography>
+                    {data.awards}
+                  </Typography>
+                </Stack>
+              )}
               <Typography variant="h5" fontWeight="bold" sx={{ color: '#333', mb: 1 }}>
                 {data.name}
               </Typography>
+
               {data.org && (
                 <Typography sx={{ color: '#575395', mb: 1 }}>
                   {data.org}
                 </Typography>
               )}
+                            
               <Typography variant="body2" sx={{ color: '#777', mb: 2 }}>
                 {data.year}
               </Typography>
+
               <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap', mb: 2 }}>
                 {data.thesis && (
                   <Button

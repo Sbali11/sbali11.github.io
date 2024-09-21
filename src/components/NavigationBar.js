@@ -16,7 +16,7 @@ function NavigationBar() {
 
   const navLinks = [
     { text: 'Home', path: '/' },
-    { text: 'Research Projects', path: '/research' },
+    { text: 'Research', path: '/research' },
     { text: 'Work Experience', path: '/industry' },
   ];
 

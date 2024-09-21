@@ -32,6 +32,7 @@ export const research = [
         "article": "https://www.cs.cmu.edu/news/2023/chi2023-nooks",
         "website": "https://nooks.vercel.app/",
         "code": "https://github.com/Sbali11/Nooks",
+        "awards": "Best Paper Honorable Mention",
         "desc": <>
 
             Initiating conversations with new people at work is often intimidating because of uncertainty about their interests. People worry others may reject their attempts to initiate conversation or that others may not enjoy the conversation. We introduce a new system, Nooks, built on Slack, that reduces fear of social evaluation by enabling individuals to initiate any conversation as a nook—a conversation room that identifies its topic, but not its creator. Automatically convening others interested in the nook, Nooks further reduces fears of social evaluation by guaranteeing individuals in advance that others they are about to interact with are interested in the conversation. In a multi-month deployment with participants in a summer research program, Nooks provided participants with non-threatening and inclusive interaction opportunities, and ambient awareness, leading to new interactions online and offline. Our results demonstrate how intentionally designed social spaces can reduce fears of social evaluation and catalyze new workplace connections.
@@ -49,7 +50,6 @@ export const research = [
         },
         "org": "Sydney Zheng, Blair Chen, Anirudh Chowdhury, Yue Wu, Akshina Gupta, Justin Khim , Reid Simmons",
         "year": "2020",
-        "awards": "Placed second in Weather & Natural Disaster Category",
         "code": "https://github.com/Sbali11/PeatlandFirePrediction",
         "poster": "https://drive.google.com/file/d/1BE8EV07vt-nwMyFeo2lV4h04sxqgZ3Ml/view?usp=sharing",
         "paper": "https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/icml2021/12/paper.pdf",
