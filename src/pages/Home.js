@@ -1,5 +1,5 @@
 // Home.js
-import { Container, Grid, Box, Typography, Link, IconButton, Avatar, Stack, Paper } from '@mui/material';
+import { Container, Card, Grid, Box, Typography, Link, IconButton, Avatar, Stack, Paper } from '@mui/material';
 import GoogleIcon from '@mui/icons-material/Google';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -113,14 +113,12 @@ export default function Home() {
         <Typography variant="h5" gutterBottom>
           Recent News & Updates
         </Typography>
-        <Paper
-          elevation={3}
+        <Card variant='outlined'
           sx={{
             p: 2,
             maxHeight: 300, // Set the max height of the news section
             overflowY: 'auto', // Enable vertical scrolling
             borderRadius: '10px',
-            boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
           }}
         >
           {news.map((item, index) => (
@@ -130,7 +128,7 @@ export default function Home() {
               </Typography>
             </Box>
           ))}
-        </Paper>
+        </Card>
       </Box>
     </Container>
   );
