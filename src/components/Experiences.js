@@ -47,7 +47,7 @@ export default function Experiences({ title, list }) {
                 {data.name}
               </Typography>
               {data.org && (
-                <Typography variant="subtitle1" sx={{ color: '#575395', mb: 1 }}>
+                <Typography sx={{ color: '#575395', mb: 1 }}>
                   {data.org}
                 </Typography>
               )}
