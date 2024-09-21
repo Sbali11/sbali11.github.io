@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c6622924.css",
-    "main.js": "/static/js/main.1fed20ff.js",
+    "main.js": "/static/js/main.3f9dab58.js",
     "static/js/488.044e14d1.chunk.js": "/static/js/488.044e14d1.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.3.0": "/static/media/fontawesome-webfont.d0ba16d89d53283e819b.svg",
     "static/media/profile.jpg": "/static/media/profile.aafbdc780faff484afa1.jpg",
@@ -17,11 +17,11 @@
     "static/media/glyphicons-halflings-regular.eot?": "/static/media/glyphicons-halflings-regular.2810d2a49be3af435f61.eot",
     "index.html": "/index.html",
     "main.c6622924.css.map": "/static/css/main.c6622924.css.map",
-    "main.1fed20ff.js.map": "/static/js/main.1fed20ff.js.map",
+    "main.3f9dab58.js.map": "/static/js/main.3f9dab58.js.map",
     "488.044e14d1.chunk.js.map": "/static/js/488.044e14d1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c6622924.css",
-    "static/js/main.1fed20ff.js"
+    "static/js/main.3f9dab58.js"
   ]
 }
