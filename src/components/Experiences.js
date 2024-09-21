@@ -24,7 +24,7 @@ export default function Experiences({ title, list }) {
           color: '#333',
         }}
       >
-        <Typography variant="h4" sx={{ fontWeight: 'bold', color: '#333' }}>
+        <Typography variant="h4" sx={{ fontWeight: 'bold', color: '#333', textAlign: 'center' }}>
           {title}
         </Typography>
       </Box>
@@ -44,12 +44,10 @@ export default function Experiences({ title, list }) {
             }}
           >
             <CardContent>
-            {data.awards && (
+              {data.awards && (
                 <Stack direction="row" alignItems="center" sx={{ color: '#d4a017', mb: 2 }}>
                   <EmojiEvents sx={{ mr: 1 }} />
-                  <Typography>
-                    {data.awards}
-                  </Typography>
+                  <Typography variant="body2">{data.awards}</Typography>
                 </Stack>
               )}
               <Typography variant="h5" fontWeight="bold" sx={{ color: '#333', mb: 1 }}>
@@ -61,12 +59,12 @@ export default function Experiences({ title, list }) {
                   {data.org}
                 </Typography>
               )}
-                            
+
               <Typography variant="body2" sx={{ color: '#777', mb: 2 }}>
                 {data.year}
               </Typography>
 
-              <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap', mb: 2 }}>
+              <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1} sx={{ flexWrap: 'wrap', mb: 2 }}>
                 {data.thesis && (
                   <Button
                     variant="contained"
