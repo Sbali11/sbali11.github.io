@@ -66,7 +66,7 @@ export default function Home() {
             About Me
           </Typography>
           <Typography variant="body1" paragraph sx={{ color: '#333' }}>
-            I am a PhD student at the{' '}
+            Hello! I am a PhD student at the{' '}
             <Link href="https://hcii.cmu.edu/" color="primary" underline="hover">
               Human-Computer Interaction Institute (HCII) at Carnegie Mellon University
             </Link>
