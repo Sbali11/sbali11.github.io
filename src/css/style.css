@@ -1402,11 +1402,11 @@ ul.slides li {
 
 /* react.css */
 a {
-    color: #6A0DAD; /* Replace with the exact purple color you want */
+    color: #ecc9ec; /* Replace with the exact purple color you want */
     text-decoration: none; /* Optional: removes underline from links */
 }
 
 a:hover {
-    color: #593E8A; /* Optional: slightly different color on hover, replace with your choice */
+    color: #939395; /* Optional: slightly different color on hover, replace with your choice */
     text-decoration: underline; /* Optional: underline on hover */
 }

@@ -1,7 +1,7 @@
 export const research = [
     {
         "name": "[MS Thesis'22] Tools to facilitate working on Machine Learning in the Industry  ",
-        "org": "CMU Expertise@Scale Lab",
+        "org": "Shreya Bali, Chinmay Kulkarni",
         "tags":
         {
 
@@ -11,13 +11,7 @@ export const research = [
         },
         "year": "2021-2022",
         "thesis": "http://reports-archive.adm.cs.cmu.edu/anon/anon/home/ftp/usr/ftp/2022/CMU-CS-22-126.pdf",
-        "article": "https://www.cs.cmu.edu/news/2023/chi2023-nooks",
-        "website": "https://nooks.vercel.app/",
-        "code": "https://github.com/Sbali11/Nooks",
         "desc": <>
-            (with Chinmay Kulkarni)
-            <br />
-            <br />
             There is an increasing interest in using machine learning (ML) across a variety of industries like finance, education and healthcare. Working on such ML product features, however, remains a point of friction for both non-technical and technical workers who without supporting infrastructure/technical knowledge struggle to fully use their skills in the context of ML. This thesis introduces novel approaches embodied in new systems to help facilitate workers better utilize the opportunities afforded by this rapidly evolving technology. At a high level, we rephrase problems encountered while ideating for ML-related features and utilizing scientific advancements as gaps in communication between the scientific community and the industry, and develop systems to help correct for this. Specifically, in the first project IdeaLens, we explore using real-world use-cases of past ML work as boundary objects while communicating technical abilities of ML work to help non-technical designers come up with new ideas within their domain. In the second project InToResearch we describe the design of a framework to spearhead an alternate ecosystem of ML research papers catered specifically to industry audience, and explore the use of TLDRs to help them navigate and find relevant information more efficiently
 
 
@@ -25,7 +19,7 @@ export const research = [
     },
     {
         "name": "[CHI'23] Nooks: Social Spaces to Lower Hesitations in Interacting with New People at Work ",
-        "org": "CMU Expertise@Scale Lab & e-HeartLab",
+        "org": "Pranav Khadpe, Chinmay Kulkarni and Geoff Kauffman",
         "tags":
         {
 
@@ -39,9 +33,7 @@ export const research = [
         "website": "https://nooks.vercel.app/",
         "code": "https://github.com/Sbali11/Nooks",
         "desc": <>
-            (with Pranav Khadpe, Chinmay Kulkarni and Geoff Kauffman)
-            <br />
-            <br />
+
             Initiating conversations with new people at work is often intimidating because of uncertainty about their interests. People worry others may reject their attempts to initiate conversation or that others may not enjoy the conversation. We introduce a new system, Nooks, built on Slack, that reduces fear of social evaluation by enabling individuals to initiate any conversation as a nook—a conversation room that identifies its topic, but not its creator. Automatically convening others interested in the nook, Nooks further reduces fears of social evaluation by guaranteeing individuals in advance that others they are about to interact with are interested in the conversation. In a multi-month deployment with participants in a summer research program, Nooks provided participants with non-threatening and inclusive interaction opportunities, and ambient awareness, leading to new interactions online and offline. Our results demonstrate how intentionally designed social spaces can reduce fears of social evaluation and catalyze new workplace connections.
 
 
@@ -55,7 +47,7 @@ export const research = [
 
             "Socially Relevant Work": ["climate change"]
         },
-        "org": "CMU ProjectX Team",
+        "org": "Sydney Zheng, Blair Chen, Anirudh Chowdhury, Yue Wu, Akshina Gupta, Justin Khim , Reid Simmons",
         "year": "2020",
         "awards": "Placed second in Weather & Natural Disaster Category",
         "code": "https://github.com/Sbali11/PeatlandFirePrediction",
@@ -65,9 +57,6 @@ export const research = [
         "article": "https://www.cs.cmu.edu/news/2021/cmu-team-uses-machine-learning-predict-peatland-fires",
         "desc":
             <>
-                (with Sydney Zheng, Blair Chen, Anirudh Chowdhury, Yue Wu, Akshina Gupta, Justin Khim , Reid Simmons)
-                <br />
-                <br />
                 In Fall 2020, I was selected in a group of 6 undergraduates to represent Carnegie Mellon in a Machine Learning Research competition(ProjectX) hosted by the University of Toronto. During this project, we worked on improving Peatland Fire Prediction using Deep Learning and proposed and developed novel models in addition to constructing a new dataset for Peatland Fires in Canada. The work was published in the ICML'21 Climate Change Workshop
                 Peat fires are the largest fires on earth in terms of fuel consumption and are responsible for a significant portion of global carbon emissions. Predicting fires in the peatlands can help decision-makers and researchers monitor and prevent peat fires. Despite this, research on predicting peatland fires remains largely understudied as compared to the prediction of other forms of fires. However, peatland fires are unique among fires and therefore require datasets and architectures attuned to their particular characteristics. In this paper, we present a new dataset, PeatSet, designed specifically for the problem of peatland fire prediction. In addition, we propose several models to tackle the problem of fire prediction for the peatlands. We develop novel neural architectures for peatland fire prediction, PeatNet, and PT-Net, with a graph-based and a transformer-based architecture, respectively. Our results indicate that these new deep-learning architectures outperform a regression baseline from existing peatland research. Among all the tested models, PT-Net achieves the highest F1 score of 0.1006 and an overall accuracy of 99.84%.
 
@@ -99,7 +88,7 @@ export const research = [
         "desc": "The project uses natural language parsing to understand the specialized text that occurs in patents. The code is written in Python and uses spaCy"
     },
 ]
-export const positions = [
+export const industry = [
     {
         "name": "Databricks",
         "org": "Auth Platform & Anti-Abuse Team",
@@ -121,20 +110,6 @@ export const positions = [
         "year": "2021",
         "desc": "During this internship, I used Computer Vision to improve the analysis of cricket matches by person & object identification, and keyframe selection. I worked on the entire pipeline: scraping youtube videos, data labeling, data processing, implementation of several baseline models & brainstorming novel algorithms, and conducting analysis on the results"
     },
-    {
-        "name": "Slingshot Startup",
-        "org": "COO",
-        "position": "",
-        "tags":
-        {
-            "Education/mentoring": []
-        },
-        "year": "2021",
-        "website": "http://slingshotahead.com/",
-        "desc": "Over the Fall, I worked at a CMU-spun startup matching highly motivated high school students to startups. I worked on different parts of the startup including conducting talks at schools & competitions, startup & client outreach, pitch preparation, managing & hiring teams and product ideation "
-    },
-
-
     {
         "name": "Diderot",
         "tags":
@@ -159,19 +134,6 @@ export const positions = [
         "desc": "During the Summer of 2019, I worked as a tech analyst at Morgan Stanley, New York under the Busines Intelligence Group \nDuring the internship, my main project was to convert the data extraction process from a sequential execution to a parallel execution running on a cluster using Spark with Scala, thus increasing the efficiency of the entire data processing pipeline. also undertook two flask based side projects: \n Detecting inefficiencies in category definitions: The website allows for easy additions of new category definitions, seeing the split in finances and overall automated analysis of defined category partitions\n Searching for existing reports : I created a website that allows the BI units to easily search for pre-existing reporting satisfying constraints to prevent duplication"
 
     },
-
-    {
-        "name": "CMU Mathematical Foundations of Computer Science (15-151)",
-        "tags":
-        {
-            "Education/mentoring": []
-        },
-        "org": "Teaching Assistant",
-        "year": "2018, 2019",
-        "desc": "Held weekly recitation, office hours and graded homeworks"
-
-    },
-
 
 
 ]

@@ -1,5 +1,6 @@
-import logo from './logo.svg';
-import Home from './Home.js'
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import "./assets/bootstrap/css/bootstrap.min.css";
 import "./assets/font-awesome/css/font-awesome.min.css";
@@ -8,51 +9,27 @@ import "./assets/textrotator/simpletextrotator.css";
 import "./assets/flexslider/flexslider.css";
 import "./css/style.css";
 import "./css/animate.css";
-import "./css/react.css"
+import "./css/react.css";
 
-import Navbar from 'react-bootstrap/Navbar';
+import NavigationBar from './components/NavigationBar';
+import Home from './pages/Home';
+import Research from './pages/Research';
+import Industry from './pages/Industry';
+import Projects from './pages/Projects';
+import Extracurricular from './pages/Extracurricular';
+
 function App() {
   return (
-
-    <div className="App">
- <center>
-   <div style={{  backgroundColor: 'black' }}>
-   <div >
-      <Navbar variant="dark" style={{   textAlign: "left" }}>
-      <center>
-       
-          {/* Headline */}
-          
-            <div >
-
-              <div style={{ textAlign: "left" }}>
-                <a style={{ "color": "white" }} href="https://drive.google.com/file/d/1g4r751tu2PvQMSuRgOB01DxVt45GYTFp/view?usp=sharing" download>
-                  Resume
-
-                </a>
-              </div>
-            </div>
-            
-          
-
-        
-        
-        
-        </center>
-        
-
-      </Navbar>
-      </div>
-      </div>
-      </center>
-
-      {/* Website Title */}
-      <title>Shreya Bali</title>
-      {/* Bootstrap */}
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossOrigin="anonymous" />
-
-      <Home />
-    </div>
+    <Router>
+      <NavigationBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/research" element={<Research />} />
+        <Route path="/industry" element={<Industry />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/extracurricular" element={<Extracurricular />} />
+      </Routes>
+    </Router>
   );
 }
 
