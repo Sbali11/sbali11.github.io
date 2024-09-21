@@ -39,7 +39,7 @@ export default function Home() {
           }}
         />
         <Box sx={{ ml: 3, textAlign: 'center' }}>
-          <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
+          <Typography variant="h3" sx={{ fontWeight: 'bold' }}>
             Shreya Bali
           </Typography>
           <Stack direction="row" spacing={1} justifyContent="center" mt={2}>
