@@ -41,7 +41,7 @@ function NavigationBar() {
             </Button>
           ))}
           <Button key={"CV"} color="inherit" component={Link} to={"https://drive.google.com/file/d/1g4r751tu2PvQMSuRgOB01DxVt45GYTFp/view?usp=sharing"} sx={{ textTransform: 'none' }}>
-              CV
+            CV
           </Button>
         </Box>
       </Toolbar>
@@ -54,8 +54,12 @@ function NavigationBar() {
               <ListItemButton component={Link} to={link.path} onClick={toggleDrawer(false)}>
                 <ListItemText primary={link.text} />
               </ListItemButton>
+
             </ListItem>
           ))}
+            <ListItemButton key={"CV"} color="inherit" component={Link} to={"https://drive.google.com/file/d/1g4r751tu2PvQMSuRgOB01DxVt45GYTFp/view?usp=sharing"} sx={{ textTransform: 'none' }}>
+              CV
+            </ListItemButton>
         </List>
       </Drawer>
     </AppBar>
