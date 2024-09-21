@@ -19,7 +19,7 @@ export const research = [
     },
     {
         "name": "[CHI'23] Nooks: Social Spaces to Lower Hesitations in Interacting with New People at Work ",
-        "org": "Pranav Khadpe, Chinmay Kulkarni and Geoff Kauffman",
+        "org": "Shreya Bali, Pranav Khadpe, Chinmay Kulkarni and Geoff Kauffman",
         "tags":
         {
 
@@ -48,7 +48,7 @@ export const research = [
 
             "Socially Relevant Work": ["climate change"]
         },
-        "org": "Sydney Zheng, Blair Chen, Anirudh Chowdhury, Yue Wu, Akshina Gupta, Justin Khim , Reid Simmons",
+        "org": "Shreya Bali, Sydney Zheng, Blair Chen, Anirudh Chowdhury, Yue Wu, Akshina Gupta, Justin Khim , Reid Simmons",
         "year": "2020",
         "code": "https://github.com/Sbali11/PeatlandFirePrediction",
         "poster": "https://drive.google.com/file/d/1BE8EV07vt-nwMyFeo2lV4h04sxqgZ3Ml/view?usp=sharing",
@@ -82,7 +82,7 @@ export const research = [
         {
             "Machine Learning": [],
         },
-        "org": "Prof. Scott Fahlman, Dean Aldrucci",
+        "org": "Shreya Bali, Prof. Scott Fahlman, Dean Aldrucci",
         "year": "2019",
         "poster": "https://drive.google.com/file/d/1JxfNELMP1rygKALishSz2QgSur_tRLGt/view?usp=sharing",
         "desc": "The project uses natural language parsing to understand the specialized text that occurs in patents. The code is written in Python and uses spaCy"
