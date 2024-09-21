@@ -1406,6 +1406,7 @@ a {
     text-decoration: none; /* Optional: removes underline from links */
 }
 
+
 a:hover {
     color: #939395; /* Optional: slightly different color on hover, replace with your choice */
     text-decoration: underline; /* Optional: underline on hover */

@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import "./assets/bootstrap/css/bootstrap.min.css";
 import "./assets/font-awesome/css/font-awesome.min.css";
