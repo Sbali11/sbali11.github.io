@@ -92,7 +92,7 @@ export default function Home() {
           </Typography>
           <Typography variant="body1" sx={{ color: '#333' }}>
             I have contributed to various HCI and ML projects at{' '}
-            <Link href="https://www.cs.cmu.edu/~eheartlab/" color="primary" underline="hover">
+            <Link href="https://www.cs.cmu.edu/~chinmayk/" color="primary" underline="hover">
               Expertise@Scale Lab
             </Link>
             ,{' '}
