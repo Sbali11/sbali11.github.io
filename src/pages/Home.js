@@ -76,13 +76,13 @@ export default function Home() {
               Prof. Mayank Goel
             </Link>
             . I build AI systems for contested domains where multiple valid perspectives legitimately coexist. My research asks: How do we architect infrastructure that preserves value pluralism rather than optimizing toward singular metrics—both for individuals with changing priorities and for stakeholders coordinating across competing needs?
-          </Typography>
-          <Typography variant="body1" paragraph sx={{ color: '#333' }}>
-            Prior to my PhD, I worked with the Auth and Anti-Abuse Teams at{' '}
-            <Link href="https://www.databricks.com/" color="primary" underline="hover">
+              Drawing on prior experience as a Software Engineer at             <Link href="https://www.databricks.com/" color="primary" underline="hover">
               Databricks
-            </Link>
-            , where I developed solutions to enhance user security and privacy. I hold a Bachelor’s and Master’s degree
+            </Link>, I create and study interactive prototypes that balance AI initiative with human oversight: systems that time interventions when people can act, surface evidence the way users choose to see it, or let experts curate and revise model outputs. 
+              Across my work, I aim to demonstrate that AI infrastructure for pluralism requires (1) systems that make value conflicts visible rather than hidden, (2) mechanisms for defining and switching between frameworks, and (3) coordination support when stakeholders' legitimate perspectives diverge.
+              </Typography>
+          <Typography variant="body1" paragraph sx={{ color: '#333' }}>
+             I hold a Bachelor’s and Master’s degree
             in Computer Science from{' '}
             <Link href="https://www.cs.cmu.edu/" color="primary" underline="hover">
               Carnegie Mellon University
