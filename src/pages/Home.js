@@ -75,8 +75,7 @@ export default function Home() {
             <Link href="http://www.mayankgoel.com/" color="primary" underline="hover">
               Prof. Mayank Goel
             </Link>
-            . I am particularly passionate about using these technologies to bridge the "communication gaps" between
-            experts and non-experts in different domains, with a current focus on healthcare.
+            . I build AI systems for contested domains where multiple valid perspectives legitimately coexist. My research asks: How do we architect infrastructure that preserves value pluralism rather than optimizing toward singular metrics—both for individuals with changing priorities and for stakeholders coordinating across competing needs?
           </Typography>
           <Typography variant="body1" paragraph sx={{ color: '#333' }}>
             Prior to my PhD, I worked with the Auth and Anti-Abuse Teams at{' '}
