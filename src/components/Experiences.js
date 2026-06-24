@@ -1,152 +1,240 @@
 // Experiences.js
 import React from 'react';
-import { Card, CardContent, Typography, Box, Button, Stack, Paper, Container } from '@mui/material';
+import { Typography, Box, Link, Stack, Chip } from '@mui/material';
 import { EmojiEvents } from '@mui/icons-material';
-import bg from '../img/bg-img.jpg'; // Adjust the path based on your project structure
 
-export default function Experiences({ title, list }) {
+const LINK_CONFIG = [
+  { key: 'thesis',  label: 'Thesis',   color: '#111827', bg: '#f3f4f6',  hover: '#e5e7eb' },
+  { key: 'paper',   label: 'Paper',    color: '#111827', bg: '#f3f4f6',  hover: '#e5e7eb' },
+  { key: 'report',  label: 'Report',   color: '#111827', bg: '#f3f4f6',  hover: '#e5e7eb' },
+  { key: 'poster',  label: 'Poster',   color: '#0891b2', bg: '#ecfeff',  hover: '#cffafe' },
+  { key: 'video',   label: 'Video',    color: '#dc2626', bg: '#fef2f2',  hover: '#fee2e2' },
+  { key: 'code',    label: 'Code',     color: '#7c3aed', bg: '#f5f3ff',  hover: '#ede9fe' },
+  { key: 'website', label: 'Website',  color: '#059669', bg: '#ecfdf5',  hover: '#d1fae5' },
+  { key: 'article', label: 'Article',  color: '#ca8a04', bg: '#fefce8',  hover: '#fef9c3' },
+];
+
+export default function Experiences({ title, list, selectedTags = new Set(), highlightedIndices = new Set() }) {
+  const itemMatchesTags = (item, index) => {
+    if (highlightedIndices.size > 0) return highlightedIndices.has(index);
+    if (selectedTags.size === 0) return false;
+    if (!item.tags) return false;
+    return Array.from(selectedTags).some(tag => Object.keys(item.tags).includes(tag));
+  };
+
   return (
-    <Container maxWidth="lg" sx={{ mt: 6, mb: 6 }}>
-      {/* Title Section with Background */}
-      <Box
-        sx={{
-          position: 'relative',
-          backgroundImage: `url(${bg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          borderRadius: '10px',
-          overflow: 'hidden',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          p: 4,
-          mb: 6,
-          color: '#333',
-        }}
-      >
-        <Typography variant="h4" sx={{ fontWeight: 'bold', color: '#333', textAlign: 'center' }}>
-          {title}
-        </Typography>
-      </Box>
-
-      {/* Cards for Experiences */}
-      <Box sx={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        {list.map((data, index) => (
-          <Card
-            key={index}
+    <Box>
+      {/* Section title */}
+      {title && (
+        <Box sx={{ mb: 4, pb: 2, borderBottom: '2px solid #e5e7eb' }}>
+          <Typography
+            variant="h4"
             sx={{
-              mb: 3,
-              borderRadius: 3,
-              boxShadow: '0 6px 15px rgba(0, 0, 0, 0.15)',
-              maxWidth: 800,
-              width: '100%',
-              overflow: 'hidden',
+              fontWeight: 700,
+              color: '#111827',
+              fontSize: { xs: '1.5rem', md: '1.75rem' },
+              fontFamily: '"Georgia", "Times New Roman", serif',
+              letterSpacing: '-0.02em',
             }}
           >
-            <CardContent>
-              {data.awards && (
-                <Stack direction="row" alignItems="center" sx={{ color: '#d4a017', mb: 2 }}>
-                  <EmojiEvents sx={{ mr: 1 }} />
-                  <Typography variant="body2">{data.awards}</Typography>
-                </Stack>
-              )}
-              <Typography variant="h5" fontWeight="bold" sx={{ color: '#333', mb: 1 }}>
-                {data.name}
-              </Typography>
+            {title}
+          </Typography>
+        </Box>
+      )}
 
+      <Box sx={{ width: '100%' }}>
+        {list.map((data, index) => {
+          const isHighlighted = itemMatchesTags(data, index);
+          const isLast = index === list.length - 1;
+
+          return (
+            <Box
+              key={index}
+              sx={{
+                py: 3.5,
+                borderBottom: isLast ? 'none' : '1px solid #f0f0f0',
+                borderLeft: isHighlighted ? '3px solid #374151' : 'none',
+                pl: isHighlighted ? 2.5 : 0,
+                backgroundColor: isHighlighted ? '#f0f7ff' : 'transparent',
+                borderRadius: isHighlighted ? '8px' : 0,
+                transition: 'all 0.25s ease',
+              }}
+            >
+              {/* Award badge */}
+              {data.awards && (
+                <Box
+                  sx={{
+                    mb: 1.75,
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    color: '#92400e',
+                    backgroundColor: '#fef3c7',
+                    px: 1.5,
+                    py: 0.5,
+                    borderRadius: '6px',
+                    border: '1px solid #fde68a',
+                  }}
+                >
+                  <EmojiEvents sx={{ mr: 0.75, fontSize: 16 }} />
+                  <Typography
+                    sx={{ fontWeight: 600, fontSize: '0.8rem', fontFamily: "'Inter', sans-serif" }}
+                  >
+                    {data.awards}
+                  </Typography>
+                </Box>
+              )}
+
+              {/* Header: name + year */}
+              <Box
+                sx={{
+                  display: 'flex',
+                  flexDirection: { xs: 'column', sm: 'row' },
+                  alignItems: { xs: 'flex-start', sm: 'flex-start' },
+                  justifyContent: 'space-between',
+                  gap: 1,
+                  mb: 0.5,
+                }}
+              >
+                <Typography
+                  variant="h5"
+                  sx={{
+                    color: '#111827',
+                    fontSize: { xs: '1.1rem', md: '1.18rem' },
+                    lineHeight: 1.35,
+                    fontWeight: 700,
+                    fontFamily: "'Inter', sans-serif",
+                    flex: 1,
+                  }}
+                >
+                  {data.name}
+                </Typography>
+
+                {data.year && (
+                  <Chip
+                    label={data.year}
+                    size="small"
+                    sx={{
+                      backgroundColor: '#f3f4f6',
+                      color: '#6b7280',
+                      fontWeight: 500,
+                      fontSize: '0.72rem',
+                      height: 22,
+                      fontFamily: "'Inter', sans-serif",
+                      flexShrink: 0,
+                      mt: { xs: 0, sm: 0.25 },
+                    }}
+                  />
+                )}
+              </Box>
+
+              {/* Position */}
+              {data.position && (
+                <Typography
+                  sx={{
+                    color: '#374151',
+                    mb: 0.25,
+                    fontWeight: 600,
+                    fontSize: '0.9rem',
+                    fontFamily: "'Inter', sans-serif",
+                  }}
+                >
+                  {data.position}
+                </Typography>
+              )}
+
+              {/* Org */}
               {data.org && (
-                <Typography sx={{ color: '#575395', mb: 1 }}>
+                <Typography
+                  sx={{
+                    color: '#4b5563',
+                    mb: 1.75,
+                    fontWeight: 400,
+                    fontSize: '0.875rem',
+                    fontStyle: 'italic',
+                    fontFamily: "'Inter', sans-serif",
+                  }}
+                >
                   {data.org}
                 </Typography>
               )}
 
-              <Typography variant="body2" sx={{ color: '#777', mb: 2 }}>
-                {data.year}
-              </Typography>
+              {/* Tags */}
+              {data.tags && Object.keys(data.tags).length > 0 && (
+                <Stack direction="row" flexWrap="wrap" gap={0.75} sx={{ mb: 2 }}>
+                  {Object.keys(data.tags).map((tag) => {
+                    const isTagSelected = selectedTags.has(tag);
+                    return (
+                      <Box
+                        key={tag}
+                        component="span"
+                        sx={{
+                          display: 'inline-block',
+                          backgroundColor: isTagSelected ? '#e5e7eb' : '#f3f4f6',
+                          color: isTagSelected ? '#111827' : '#4b5563',
+                          fontWeight: isTagSelected ? 600 : 500,
+                          fontSize: '0.72rem',
+                          px: 1.125,
+                          py: 0.375,
+                          borderRadius: '5px',
+                          border: isTagSelected ? '1px solid #9ca3af' : '1px solid #e5e7eb',
+                          fontFamily: "'Inter', sans-serif",
+                          transition: 'all 0.15s ease',
+                        }}
+                      >
+                        {tag}
+                      </Box>
+                    );
+                  })}
+                </Stack>
+              )}
 
-              <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1} sx={{ flexWrap: 'wrap', mb: 2 }}>
-                {data.thesis && (
-                  <Button
-                    variant="contained"
-                    href={data.thesis}
-                    sx={{ backgroundColor: '#575395', color: 'white', textTransform: 'none' }}
-                  >
-                    MS Thesis
-                  </Button>
-                )}
-                {data.paper && (
-                  <Button
-                    variant="contained"
-                    href={data.paper}
-                    sx={{ backgroundColor: '#575395', color: 'white', textTransform: 'none' }}
-                  >
-                    Paper
-                  </Button>
-                )}
-                {data.report && (
-                  <Button
-                    variant="contained"
-                    href={data.report}
-                    sx={{ backgroundColor: '#575395', color: 'white', textTransform: 'none' }}
-                  >
-                    Report
-                  </Button>
-                )}
-                {data.poster && (
-                  <Button
-                    variant="contained"
-                    href={data.poster}
-                    sx={{ backgroundColor: '#575395', color: 'white', textTransform: 'none' }}
-                  >
-                    Poster
-                  </Button>
-                )}
-                {data.video && (
-                  <Button
-                    variant="contained"
-                    href={data.video}
-                    sx={{ backgroundColor: '#575395', color: 'white', textTransform: 'none' }}
-                  >
-                    Video
-                  </Button>
-                )}
-                {data.code && (
-                  <Button
-                    variant="contained"
-                    href={data.code}
-                    sx={{ backgroundColor: '#575395', color: 'white', textTransform: 'none' }}
-                  >
-                    Code
-                  </Button>
-                )}
-                {data.website && (
-                  <Button
-                    variant="contained"
-                    href={data.website}
-                    sx={{ backgroundColor: '#575395', color: 'white', textTransform: 'none' }}
-                  >
-                    Website
-                  </Button>
-                )}
-                {data.article && (
-                  <Button
-                    variant="contained"
-                    href={data.article}
-                    sx={{ backgroundColor: '#575395', color: 'white', textTransform: 'none' }}
-                  >
-                    News Article
-                  </Button>
-                )}
-              </Stack>
-              <Paper elevation={0} sx={{ p: 2, backgroundColor: '#f9f9f9', borderRadius: 2 }}>
-                <Typography variant="body2" sx={{ color: '#555', lineHeight: 1.6 }}>
-                  {data.desc}
-                </Typography>
-              </Paper>
-            </CardContent>
-          </Card>
-        ))}
+              {/* Links */}
+              {LINK_CONFIG.some(({ key }) => data[key]) && (
+                <Stack direction="row" flexWrap="wrap" gap={0.75} sx={{ mb: 2 }}>
+                  {LINK_CONFIG.map(({ key, label, color, bg, hover }) =>
+                    data[key] ? (
+                      <Link
+                        key={key}
+                        href={data[key]}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        underline="none"
+                        sx={{
+                          color,
+                          fontSize: '0.76rem',
+                          fontWeight: 600,
+                          px: 1.25,
+                          py: 0.375,
+                          borderRadius: '6px',
+                          backgroundColor: bg,
+                          fontFamily: "'Inter', sans-serif",
+                          transition: 'background-color 0.15s ease',
+                          '&:hover': { backgroundColor: hover },
+                        }}
+                      >
+                        {label}
+                      </Link>
+                    ) : null
+                  )}
+                </Stack>
+              )}
+
+              {/* Description */}
+              <Typography
+                variant="body1"
+                sx={{
+                  color: '#374151',
+                  lineHeight: 1.85,
+                  fontSize: '0.9rem',
+                  fontFamily: "'Inter', sans-serif",
+                }}
+              >
+                {data.desc}
+              </Typography>
+            </Box>
+          );
+        })}
       </Box>
-    </Container>
+    </Box>
   );
 }

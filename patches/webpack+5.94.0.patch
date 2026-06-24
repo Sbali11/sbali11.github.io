@@ -1,0 +1,13 @@
+diff --git a/node_modules/webpack/lib/cache/PackFileCacheStrategy.js b/node_modules/webpack/lib/cache/PackFileCacheStrategy.js
+index 3f340db..7ac1418 100644
+--- a/node_modules/webpack/lib/cache/PackFileCacheStrategy.js
++++ b/node_modules/webpack/lib/cache/PackFileCacheStrategy.js
+@@ -1281,7 +1281,7 @@ class PackFileCacheStrategy {
+ 		if (this.readonly) return Promise.resolve();
+ 
+ 		return this._getPack().then(pack => {
+-			pack.set(identifier, etag === null ? null : etag.toString(), data);
++			pack.set(identifier, etag == null ? null : etag.toString(), data);
+ 		});
+ 	}
+ 

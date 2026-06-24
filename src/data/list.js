@@ -1,103 +1,151 @@
+// Research organized by publication type
+export const researchByCategory = {
+    "Conference Papers": [
+        {
+            "name": "Evidotes: Integrating Scientific Evidence and Anecdotes to Support Uncertainties Triggered by Peer Health Posts",
+            "venue": "CHI 2026",
+            "org": <><strong>Shreya Bali</strong>, Riku Arakawa, Peace Odiase, Sherry Wu, Mayank Goel</>,
+            "tags": {
+                "Human Computer Interaction": [],
+                "Health": [],
+                "Applied ML": []
+            },
+            "year": "2024-2025",
+            "website": "https://evidotes.vercel.app/",
+            "awards": "Best Paper Honorable Mention (Top 5% of submissions)",
+        },
+        {
+            "name": "CalmReminder: A Design Probe for Parental Engagement with Children with Hyperactivity, Augmented by Real-Time Motion Sensing with a Watch",
+            "venue": "CHI 2026",
+            "org": <>Riku Arakawa*, <strong>Shreya Bali*</strong>, Anupama Sitaraman, Woosuk Seo, Sam Shaaban, Oliver Lindheim, Traci M. Kennedy, Mayank Goel</>,
+            "tags": {
+                "Human Computer Interaction": [],
+                "Applied ML": [],
+                "Ubiquitous Computing": [],
+                "Health": []
+            },
+            "year": "2024-2025",
+        },
+
+        {
+            "name": "Nooks: Social Spaces to Lower Hesitations in Interacting with New People at Work",
+            "venue": "CHI 2023",
+            "org": <><strong>Shreya Bali</strong>, Pranav Khadpe, Geoff Kaufman, Chinmay Kulkarni</>,
+            "tags": {
+                "Human Computer Interaction": [],
+                "Social Computing": ["diversity/inclusion"]
+            },
+            "year": "2021-2022",
+            "paper": "https://programs.sigchi.org/chi/2023/program/content/96105",
+            "article": "https://www.cs.cmu.edu/news/2023/chi2023-nooks",
+            "website": "https://nooks.vercel.app/",
+            "code": "https://github.com/Sbali11/Nooks",
+            "awards": "Best Paper Honorable Mention (Top 5% of submissions)",
+        },
+    ],
+    "Journal Papers": [
+        {
+            "name": "Integration of botanicals in contemporary medicine: road blocks, checkpoints and go-ahead signals",
+            "venue": "Integrative Medicine Research 2018",
+            "org": <>Neha Arora Chugh, <strong>Shreya Bali</strong>, Ashwani Koul</>,
+            "tags": {
+                "Human Computer Interaction": [],
+                "Health": [],
+            },
+            "year": "2018",
+            "paper": "https://www.sciencedirect.com/science/article/pii/S2213423018300027",
+        },
+    ],
+    "Workshop Papers": [
+        {
+            "name": "Context-Aware Assistant for Integrated Home Care: Empowering Elderly Patients and Their Care Networks",
+            "venue": "CHI 2025 Workshop",
+            "org": <>Riku Arakawa, <strong>Shreya Bali</strong>, Mayank Goel</>,
+            "tags": {
+                "Human Computer Interaction": [],
+                "Health": [],
+                "Applied ML": [],
+                "Ubiquitous Computing": []
+            },
+            "year": "2024-2025",
+            "paper": "https://hcii.cmu.edu/news/2025/chi2025-workshop-aging-in-place",
+        },
+        {
+            "name": "Prediction of Boreal Peatland Fires in Canada using Spatio-Temporal Methods",
+            "venue": "ICML 2021 Climate Change Workshop",
+            "tags": {
+                "Human Computer Interaction": [],
+                "Applied ML": [],
+                "Socially Relevant Work": ["climate change"]
+            },
+            "org": <><strong>Shreya Bali*</strong>, Sydney Zheng*, Akshina Gupta*, Yue Wu*, Blair Chen*, Anirban Chowdhury*, Justin Khim, Reid Simmons</>,
+            "year": "2020-2021",
+            "code": "https://github.com/Sbali11/PeatlandFirePrediction",
+            "poster": "https://drive.google.com/file/d/1BE8EV07vt-nwMyFeo2lV4h04sxqgZ3Ml/view?usp=sharing",
+            "paper": "https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/icml2021/12/paper.pdf",
+            "video": "https://www.climatechange.ai/papers/icml2021/12",
+            "article": "https://www.cs.cmu.edu/news/2021/cmu-team-uses-machine-learning-predict-peatland-fires",
+            "awards": "2nd Place, Natural Disaster Category, University of Toronto ProjectX Research Competition",
+        },
+    ],
+    "Thesis": [
+        {
+            "name": "Tools to Facilitate Machine Learning Product Development in Industry",
+            "venue": "MS Thesis, Carnegie Mellon University 2022",
+            "org": <><strong>Shreya Bali</strong>, Advisor: Chinmay Kulkarni</>,
+            "tags": {
+                "Human Computer Interaction": [],
+                "Applied ML": []
+            },
+            "year": "2021-2022",
+            "thesis": "http://reports-archive.adm.cs.cmu.edu/anon/anon/home/ftp/usr/ftp/2022/CMU-CS-22-126.pdf",
+        },
+    ],
+    "Work in Progress": [
+        {
+            "name": "[Anonymized Title]",
+            "venue": "Under Review",
+            "org": <>Jill Fain Lehman, Alexander Maytin, Brian Chen, <strong>Shreya Bali</strong>, Riku Arakawa, Emma Russell, Haarika Reddy, Annalise Vaccarello, Christina Trinh, Dustin DeMeo, Mayank Goel, Bryan T Carroll</>,
+            "tags": {
+                "Health": [],
+                "Applied ML": [],
+                "Human-AI Interaction": []
+            },
+            "year": "2024-2025",
+        },
+    ],
+};
+
+// Flat list for backward compatibility
 export const research = [
-    {
-        "name": "[MS Thesis'22] Tools to facilitate working on Machine Learning in the Industry  ",
-        "org": "Shreya Bali, Chinmay Kulkarni",
-        "tags":
-        {
-
-            "Human Computer Interaction": [],
-
-            "Machine Learning": []
-        },
-        "year": "2021-2022",
-        "thesis": "http://reports-archive.adm.cs.cmu.edu/anon/anon/home/ftp/usr/ftp/2022/CMU-CS-22-126.pdf",
-        "desc": <>
-            There is an increasing interest in using machine learning (ML) across a variety of industries like finance, education and healthcare. Working on such ML product features, however, remains a point of friction for both non-technical and technical workers who without supporting infrastructure/technical knowledge struggle to fully use their skills in the context of ML. This thesis introduces novel approaches embodied in new systems to help facilitate workers better utilize the opportunities afforded by this rapidly evolving technology. At a high level, we rephrase problems encountered while ideating for ML-related features and utilizing scientific advancements as gaps in communication between the scientific community and the industry, and develop systems to help correct for this. Specifically, in the first project IdeaLens, we explore using real-world use-cases of past ML work as boundary objects while communicating technical abilities of ML work to help non-technical designers come up with new ideas within their domain. In the second project InToResearch we describe the design of a framework to spearhead an alternate ecosystem of ML research papers catered specifically to industry audience, and explore the use of TLDRs to help them navigate and find relevant information more efficiently
-
-
-        </>
-    },
-    {
-        "name": "[CHI'23] Nooks: Social Spaces to Lower Hesitations in Interacting with New People at Work ",
-        "org": "Shreya Bali, Pranav Khadpe, Chinmay Kulkarni and Geoff Kauffman",
-        "tags":
-        {
-
-            "Human Computer Interaction": [],
-
-            "Socially Relevant Work": ["diversity/inclusion"]
-        },
-        "year": "2021-2022",
-        "paper": "https://programs.sigchi.org/chi/2023/program/content/96105",
-        "article": "https://www.cs.cmu.edu/news/2023/chi2023-nooks",
-        "website": "https://nooks.vercel.app/",
-        "code": "https://github.com/Sbali11/Nooks",
-        "awards": "Best Paper Honorable Mention",
-        "desc": <>
-
-            Initiating conversations with new people at work is often intimidating because of uncertainty about their interests. People worry others may reject their attempts to initiate conversation or that others may not enjoy the conversation. We introduce a new system, Nooks, built on Slack, that reduces fear of social evaluation by enabling individuals to initiate any conversation as a nook—a conversation room that identifies its topic, but not its creator. Automatically convening others interested in the nook, Nooks further reduces fears of social evaluation by guaranteeing individuals in advance that others they are about to interact with are interested in the conversation. In a multi-month deployment with participants in a summer research program, Nooks provided participants with non-threatening and inclusive interaction opportunities, and ambient awareness, leading to new interactions online and offline. Our results demonstrate how intentionally designed social spaces can reduce fears of social evaluation and catalyze new workplace connections.
-
-
-        </>
-    },
-    {
-        "name": "[ICML Climate Change Workshop'20] Prediction of Boreal Peatland Fires in Canada ",
-        "tags":
-        {
-            "Machine Learning": [],
-
-            "Socially Relevant Work": ["climate change"]
-        },
-        "org": "Shreya Bali, Sydney Zheng, Blair Chen, Anirudh Chowdhury, Yue Wu, Akshina Gupta, Justin Khim , Reid Simmons",
-        "year": "2020",
-        "code": "https://github.com/Sbali11/PeatlandFirePrediction",
-        "poster": "https://drive.google.com/file/d/1BE8EV07vt-nwMyFeo2lV4h04sxqgZ3Ml/view?usp=sharing",
-        "paper": "https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/icml2021/12/paper.pdf",
-        "video": "https://www.climatechange.ai/papers/icml2021/12",
-        "article": "https://www.cs.cmu.edu/news/2021/cmu-team-uses-machine-learning-predict-peatland-fires",
-        "desc":
-            <>
-                In Fall 2020, I was selected in a group of 6 undergraduates to represent Carnegie Mellon in a Machine Learning Research competition(ProjectX) hosted by the University of Toronto. During this project, we worked on improving Peatland Fire Prediction using Deep Learning and proposed and developed novel models in addition to constructing a new dataset for Peatland Fires in Canada. The work was published in the ICML'21 Climate Change Workshop
-                Peat fires are the largest fires on earth in terms of fuel consumption and are responsible for a significant portion of global carbon emissions. Predicting fires in the peatlands can help decision-makers and researchers monitor and prevent peat fires. Despite this, research on predicting peatland fires remains largely understudied as compared to the prediction of other forms of fires. However, peatland fires are unique among fires and therefore require datasets and architectures attuned to their particular characteristics. In this paper, we present a new dataset, PeatSet, designed specifically for the problem of peatland fire prediction. In addition, we propose several models to tackle the problem of fire prediction for the peatlands. We develop novel neural architectures for peatland fire prediction, PeatNet, and PT-Net, with a graph-based and a transformer-based architecture, respectively. Our results indicate that these new deep-learning architectures outperform a regression baseline from existing peatland research. Among all the tested models, PT-Net achieves the highest F1 score of 0.1006 and an overall accuracy of 99.84%.
-
-
-            </>
-    },
-    {
-        "name": "Audio Source Separation",
-        "tags":
-        {
-            "Machine Learning": [],
-            "Education/mentoring": []
-        },
-        "org": "CMU Multimodal Lab",
-        "year": "2019-2020",
-        "desc": "Blind audio source separation is an active area of research. In this problem, the input to the model is a sound wave with sounds produced from multiple sources. The paper suggests a novel ontology based weighted ensemble architecture to improve the accuracy of current models. We created a sample  such architecture consisting of a Transformer to identify ontological cate- gories of sound sources followed by an ensemble of Wave-U-Net Models.  The finale result is taken after weighing the results based on the predicted categories. In addition, the paper introduces a novel dataset consisting of 53 categories. The new model is tested on the new datasets and better training and validation curves are obtained as compared to a single Wave-U-Net model. In addition, while this is not discussed in the paper, the architecture allows for training a model by intermixing different datasets: only models specialized for the respective sounds can be trained on the new datasets. Hence, even if the resulting dataset is imbalanced, this does not adversely effect the training procedure.",
-        "report": "https://drive.google.com/file/d/1M5Wx_qrDCH8rlJIgISL1lSFpl2hKyS9m/view?usp=sharing"
-    },
-
-    {
-        "name": "Patent Claim Analysis",
-        "tags":
-        {
-            "Machine Learning": [],
-        },
-        "org": "Shreya Bali, Prof. Scott Fahlman, Dean Aldrucci",
-        "year": "2019",
-        "poster": "https://drive.google.com/file/d/1JxfNELMP1rygKALishSz2QgSur_tRLGt/view?usp=sharing",
-        "desc": "The project uses natural language parsing to understand the specialized text that occurs in patents. The code is written in Python and uses spaCy"
-    },
-]
+    ...researchByCategory["Conference Papers"],
+    ...researchByCategory["Journal Papers"],
+    ...researchByCategory["Workshop Papers"],
+    ...researchByCategory["Thesis"],
+    ...researchByCategory["Work in Progress"],
+];
 export const industry = [
     {
-        "name": "Databricks",
-        "org": "Auth Platform & Anti-Abuse Team",
-        "position": "Software Engineer",
-        "tags":
-        {
+        "name": "SmashLab, Carnegie Mellon University",
+        "org": "PhD Research Assistant, Advisor: Prof. Mayank Goel",
+        "position": "PhD Research Assistant",
+        "tags": {
+            "Human Computer Interaction": [],
+            "Applied Machine Learning": []
         },
-        "year": "2022-present",
-        "desc": "Improving Stability of Authentication Platform and helping decrease abuse on the platform"
+        "year": "2024 - Present",
+        "desc": "Designing adaptive, mixed-initiative AI systems that keep people in control. Working on systems that balance AI initiative with human oversight across productivity, classrooms, and health teams. Focus on creating AI infrastructure that preserves value pluralism and supports coordination across stakeholders."
+    },
+    {
+        "name": "Databricks Inc.",
+        "org": "Trust, Safety and Anti-Abuse Team",
+        "position": "Software Engineer",
+        "tags": {
+            "Systems": [],
+            "Applied Machine Learning": []
+        },
+        "year": "2022 - 2024",
+        "desc": "Built large-scale ML infrastructure for trust and safety applications. Improved stability of authentication platform and developed systems to decrease abuse on the platform. Worked on distributed systems using Apache Spark, Kubernetes, and AWS."
     },
     {
         "name": "Reliance Jio ",
@@ -105,7 +153,7 @@ export const industry = [
         "position": "",
         "tags":
         {
-            "Machine Learning": []
+            "Applied ML": []
         },
         "year": "2021",
         "desc": "During this internship, I used Computer Vision to improve the analysis of cricket matches by person & object identification, and keyframe selection. I worked on the entire pipeline: scraping youtube videos, data labeling, data processing, implementation of several baseline models & brainstorming novel algorithms, and conducting analysis on the results"
@@ -138,68 +186,86 @@ export const industry = [
 
 ]
 
+// Projects organized by year (most recent first)
+export const projectsByCategory = {
+    "2024-2025": [
+        {
+            "name": "Apple Health Redesign",
+            "tags": {
+                "Product Design": [],
+                "Health Tech": [],
+                "UI/UX": []
+            },
+            "year": "2024-2025",
+            "website": "https://apple-health-redesign.vercel.app/",
+            "desc": "Led end-to-end product redesign of Apple Health interface, reimagining how millions of users interact with personal health data. Architected an intuitive information hierarchy and data visualization system that makes complex health metrics accessible and actionable. Implemented with modern React and responsive design patterns, demonstrating expertise in translating user research insights into production-ready interfaces."
+        },
+    ],
+    "2021": [
+        {
+            "name": "Optimizing Graph Neural Networks for CPU Inference",
+            "tags": {
+                "Systems": [],
+                "Performance Engineering": [],
+                "Applied ML": []
+            },
+            "org": <>with Mayank Jain</>,
+            "year": "2021",
+            "report": "https://drive.google.com/file/d/15kp72M79kdsYAa8LL9pX2INKYcIWvinH/view?usp=sharing",
+            "code": "https://github.com/mayankj/740_Proj",
+            "desc": "Engineered novel optimization techniques to enable efficient Graph Convolutional Network (GCN) inference on CPU architectures, addressing the critical industry challenge of deploying ML models in resource-constrained environments. Achieved significant performance improvements through cache-aware algorithms and architectural optimizations, validated across speed, memory efficiency, and accuracy metrics on Wiki-CS dataset. Work bridges the gap between cutting-edge deep learning and practical deployment constraints."
+        },
+    ],
+    "2020": [
+        {
+            "name": "High-Performance Image Processing Toolkit",
+            "tags": {
+                "Systems": [],
+                "Parallel Computing": [],
+                "Computer Vision": []
+            },
+            "org": <>with Kusha Maharshi</>,
+            "year": "2020",
+            "report": "https://kmeshx.github.io/pdfs/418_CP__Copy_.pdf",
+            "code": "https://github.com/kmeshx/Parallel-Image-Processing-Toolkit",
+            "desc": "Built production-grade parallel image processing toolkit implementing core computer vision algorithms (Otsu Binarization, Edge Detection, K-Means Clustering) with both OpenMP and CUDA backends. Systematically analyzed parallelization strategies across different hardware architectures, achieving substantial speedups over sequential implementations. Demonstrates deep understanding of performance optimization and heterogeneous computing, skills essential for building scalable ML infrastructure."
+        },
+        {
+            "name": "Multi-Modal Learning for Audio-Visual Matching",
+            "tags": {
+                "Applied ML": [],
+                "Deep Learning": []
+            },
+            "org": <>with Ria Pradeep</>,
+            "year": "2020",
+            "code": "https://github.com/RiaPradeep/VideoSound-Matching",
+            "report": "https://drive.google.com/file/d/1RqD-OX-V67RuaCUVTr0fUFEapBoCJcCI/view?usp=sharing",
+            "desc": "Designed and implemented multi-modal deep learning system for audio-visual correspondence detection, with applications in content moderation, video understanding, and media synchronization. Developed novel Multi-Similarity loss function that outperforms standard Cosine-BCE by incorporating enhanced regularization. Built complete ML pipeline from data processing through model training and evaluation using PyTorch."
+        },
+    ],
+    "2019": [
+        {
+            "name": "NLP System for Patent Document Analysis",
+            "tags": {
+                "Applied ML": [],
+                "NLP": []
+            },
+            "org": <><strong>Shreya Bali</strong>, Prof. Scott Fahlman, Dean Aldrucci</>,
+            "year": "2019",
+            "poster": "https://drive.google.com/file/d/1JxfNELMP1rygKALishSz2QgSur_tRLGt/view?usp=sharing",
+            "desc": "Developed specialized NLP system for parsing and analyzing patent claim language, addressing the unique challenges of legal-technical document understanding. Built using Python and spaCy, demonstrating ability to adapt ML techniques to domain-specific problems with complex linguistic structures. Relevant to legal tech, IP management, and enterprise document processing applications."
+        },
+    ],
+};
+
+// Flat list for backward compatibility
 export const projects = [
-    {
-        "name": "Towards GCNs that Run on CPUs",
-
-        "tags":
-        {
-            "Parallel/Distributed Systems": [],
-            "Machine Learning": ["machine learning"]
-        },
-        "year": "2021",
-        "report": "https://drive.google.com/file/d/15kp72M79kdsYAa8LL9pX2INKYcIWvinH/view?usp=sharing",
-        "code": "https://github.com/mayankj/740_Proj",
-        "desc": <>
-            (with Mayank Jain)
-            <br />
-            <br />
-            On one hand, Graph neural networks (GNNs), an emerging deep learning model class that can extract meaningful representations from highly expressive graph-structured data are gaining popularity for a wide ranges of applications. On the other hand, as neural net architectures get deeper and deeper, the cost running modern ML algorithms efficiently is getting higher and higher. In this work, we explore techniques to make running GNNs, specifically GCNs, on everyday CPUs more feasible. Using the Wiki-CS dataset, we both analyze past approaches to optimize this class of algorithms and also suggest novel methods to optimize on the the specific structure and purpose of GCNs. We compare these approaches on several key factors including speed, cache performance and accuracy on the results.
-        </>
-    },
-
-    {
-        "name": "Parallel Image Processing Toolkit",
-
-        "tags":
-        {
-            "Parallel/Distributed Systems": [],
-            "Machine Learning": ["machine learning"]
-        },
-        "year": "2020",
-        "report": "https://kmeshx.github.io/pdfs/418_CP__Copy_.pdf",
-        "code": "https://github.com/kmeshx/Parallel-Image-Processing-Toolkit",
-        "desc":
-            <>
-                (with Kusha Maharshi)
-                <br />
-                <br />
-                An image processing toolbox for several image segmentation algorithms including Otsu Binarization, Edge Detection, and K-Means. The sequential versions of the algorithms are implemented using C++, and the parallel versions are implemented in both OpenMP and CUDA. The goal of this project was to implement and analyze the scalability, scope, and benefit of performing image segmentation in parallel
-            </>
-    },
-
-
-    {
-        "name": "Video Sound Matching",
-        "tags":
-        {
-            "Machine Learning": ["machine learning"]
-        },
-        "year": "2020",
-        "code": "https://github.com/RiaPradeep/VideoSound-Matching",
-        "report": "https://drive.google.com/file/d/1RqD-OX-V67RuaCUVTr0fUFEapBoCJcCI/view?usp=sharing",
-        "desc":
-            <>
-                (with Ria Pradeep)
-                <br />
-                <br />
-                The aim of the project is to see if the given audio and video sample belong to the same category. Several models for this problem were implemented each of which first creates an enCoding for the audio and video input independently, using various techniques, then maps them to the same space. We also presented a novel loss function for this problem, Multi-Similarity, which builds on Cosine-BCE with increased components in the regularized term. The code for the project was written using pytorch.
-            </>
-    },
-
-
-
+    ...projectsByCategory["2024-2025"],
+    ...projectsByCategory["2021"],
+    ...projectsByCategory["2020"],
+    ...projectsByCategory["2019"],
 ]
+
 
 export const extracurricular = [
     {
